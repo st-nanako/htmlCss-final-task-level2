@@ -6,6 +6,7 @@
     <title>ログイン - LiveHub</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./base.css">
     <style>
         :root {
             --primary-color: #8b5cf6;
@@ -20,9 +21,10 @@
             align-items: center;
             justify-content: center;
             position: relative;
-            overflow: hidden;
+            /*overflow: hidden;*/
         }
-        
+        /*
+        削除
         body::before {
             content: '';
             position: absolute;
@@ -46,6 +48,7 @@
             left: -150px;
             animation: float 8s ease-in-out infinite reverse;
         }
+        */
         
         @keyframes float {
             0%, 100% { transform: translate(0, 0); }
@@ -175,11 +178,11 @@
 </head>
 <body>
     <!-- 戻るリンク -->
-    <a href="#" class="back-link">
+    <a href="./index.html" class="back-link">
         <i class="bi bi-arrow-left-circle"></i> ホームに戻る
     </a>
 
-    <div class="login-container">
+    <div class="login-container ">
         <div class="login-card">
             <!-- ログインヘッダー -->
             <div class="login-header">
@@ -252,13 +255,7 @@
                     <i class="bi bi-google"></i> Googleでログイン
                 </button>
                 <button class="btn social-login-btn w-100 mb-3">
-                    <i class="bi bi-twitter"></i> Twitterでログイン
-                </button>
-                <button class="btn social-login-btn w-100 mb-3">
-                    <i class="bi bi-spotify"></i> Spotifyでログイン
-                </button>
-                <button class="btn social-login-btn w-100 mb-4">
-                    <i class="bi bi-apple"></i> Appleでログイン
+                    <i class="bi bi-twitter"></i> Xでログイン
                 </button>
 
                 <!-- 新規登録リンク -->
