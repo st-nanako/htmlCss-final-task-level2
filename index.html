@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameHub - ゲーム情報サイト</title>
+    <!-- bootstorap リンク -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <!-- スタイルシート リンク -->
     <link rel="stylesheet" href="./base.css">
+    <!-- ファビコン　リンク -->
+    <link rel="icon" href="./img/favicon.ico">
     <style>
 
         .navbar {
@@ -145,20 +150,20 @@
                         <a class="nav-link active" href="#">ホーム</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./music-festival-list.html">ゲーム一覧</a>
+                        <a class="nav-link" href="./games-list.html">ゲーム一覧</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./music-artist-list.html">制作会社一覧</a>
+                        <a class="nav-link" href="./game-companies.html">制作会社一覧</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./music-festival-ticket.html">ゲーム購入</a>
+                        <a class="nav-link" href="./game-purchase.html">ゲーム購入</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./music-festival-myticket.html">マイゲーム</a>
+                        <a class="nav-link" href="./game-mygame.html">マイゲーム</a>
                     </li>
                 </ul>
                
-                <a href="./music-login-page.html" class="btn btn-info ms-3 fw-bold">
+                <a href="./login.html" class="btn btn-info ms-3 fw-bold">
                     <i class="bi bi-person-circle"></i> ログイン
                 </a>
             </div>
@@ -173,7 +178,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="input-group input-group-lg">
-                        <input type="text" class="form-control" placeholder="ゲームタイトル、制作会社で検索...">
+                        <input type="text" class="form-control" placeholder="ゲームタイトルで検索...">
                         <button class="btn btn-info fw-bold" type="button">
                             <i class="bi bi-search"></i> 検索
                         </button>
@@ -237,14 +242,13 @@
                 <h2 class="fw-bold">
                     <i class="bi bi-calendar-check text-danger"></i> 発売予定ゲーム
                 </h2>
-                <a href="./music-festival-list.html" class="btn btn-outline-primary">すべて見る <i class="bi bi-arrow-right"></i></a>
             </div>
 
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card event-card">
                         <div class="position-relative">
-                            <img src="./img/REANIMAL.png" class="card-img-top"
+                            <img src="./img/games/REANIMAL.png" class="card-img-top"
                                 alt="Summer Festival">
                             <div class="event-date-badge">
                                 <div class="year">2026年</div>
@@ -278,7 +282,7 @@
                 <div class="col-md-4">
                     <div class="card event-card">
                         <div class="position-relative">
-                            <img src="img/honokurasi.jpg" class="card-img-top"
+                            <img src="img/games/honokurasi.jpg" class="card-img-top"
                                 alt="Rock Night">
                             <div class="event-date-badge">
                                 <div class="year">2026年</div>
@@ -311,7 +315,7 @@
                 <div class="col-md-4">
                     <div class="card event-card">
                         <div class="position-relative">
-                            <img src="./img/Chihuahua Controller.jpg" class="card-img-top"
+                            <img src="./img/games/Chihuahua Controller.jpg" class="card-img-top"
                                 alt="Chihuahua Controller">
                             <div class="event-date-badge">
                                 <div class="year">2026年</div>
@@ -343,8 +347,8 @@
                 <div class="col-md-4">
                     <div class="card event-card">
                         <div class="position-relative">
-                            <img src="https://placehold.co/400x250/a855f7/ffffff?text=EDM+Party" class="card-img-top"
-                                alt="EDM Party">
+                            <img src="https://placehold.co/400x250/a855f7/ffffff?text=Game+1" class="card-img-top"
+                                alt="Game 1">
                             <div class="event-date-badge">
                                 <div class="year">2026年</div>
                                 <div class="day">20</div>
@@ -352,14 +356,14 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <span class="badge genre-badge mb-2" style="background-color: #a855f7;">EDM</span>
-                            <span class="badge bg-info genre-badge mb-2">エレクトロ</span>
-                            <h5 class="card-title fw-bold">ELECTRO WAVE FESTIVAL</h5>
+                            <span class="badge genre-badge mb-2" style="background-color: #a855f7;">ノベルゲーム</span>
+                            <span class="badge bg-primary genre-badge mb-2">パズルゲーム</span>
+                            <h5 class="card-title fw-bold">Game 1</h5>
                             <p class="text-muted mb-2">
-                                <i class="bi bi-building text-danger"></i> 幕張メッセ
+                                <i class="bi bi-building text-danger"></i> 制作会社名
                             </p>
                             <p class="card-text text-muted small">
-                                世界トップクラスのDJが集結!踊り明かそう
+                                詳細
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div>
@@ -376,8 +380,8 @@
                 <div class="col-md-4">
                     <div class="card event-card">
                         <div class="position-relative">
-                            <img src="https://placehold.co/400x250/10b981/ffffff?text=Acoustic+Live"
-                                class="card-img-top" alt="Acoustic Live">
+                            <img src="https://placehold.co/400x250/10b981/ffffff?text=Game+2"
+                                class="card-img-top" alt="Game 2">
                             <div class="event-date-badge">
                                 <div class="year">2026年</div>
                                 <div class="day">25</div>
@@ -385,18 +389,18 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <span class="badge bg-success genre-badge mb-2">アコースティック</span>
-                            <span class="badge bg-warning text-dark genre-badge mb-2">フォーク</span>
-                            <h5 class="card-title fw-bold">WINTER ACOUSTIC NIGHT</h5>
+                            <span class="badge bg-success genre-badge mb-2">RPG</span>
+                            <span class="badge bg-warning text-dark genre-badge mb-2">シミュレーション</span>
+                            <h5 class="card-title fw-bold">Game 2</h5>
                             <p class="text-muted mb-2">
-                                <i class="bi bi-building text-danger"></i> なんばHatch
+                                <i class="bi bi-building text-danger"></i> 制作会社名
                             </p>
                             <p class="card-text text-muted small">
-                                心温まる冬の夜に、アコースティックサウンドを
+                                詳細
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div>
-                                    <span class="badge bg-success">販売中</span>
+                                    <span class="badge bg-success">予約受付中</span>
                                 </div>
                                 <div class="text-end">
                                     <small class="text-muted">¥5,500〜</small>
@@ -409,23 +413,23 @@
                 <div class="col-md-4">
                     <div class="card event-card">
                         <div class="position-relative">
-                            <img src="https://placehold.co/400x250/f59e0b/ffffff?text=Hip+Hop+Live" class="card-img-top"
-                                alt="Hip Hop Live">
+                            <img src="https://placehold.co/400x250/f59e0b/ffffff?text=Game+3" class="card-img-top"
+                                alt="Game 1">
                             <div class="event-date-badge">
                                 <div class="year">2026年</div>
                                 <div class="day">28</div>
-                                <div class="month">12月</div>
+                                <div class="month">2月</div>
                             </div>
                         </div>
                         <div class="card-body">
-                            <span class="badge genre-badge mb-2" style="background-color: #f59e0b;">ヒップホップ</span>
-                            <span class="badge bg-dark genre-badge mb-2">R&B</span>
-                            <h5 class="card-title fw-bold">URBAN BEATS FESTIVAL</h5>
+                            <span class="badge genre-badge mb-2" style="background-color: #a855f7;">ノベルゲーム</span>
+                            <span class="badge bg-dark genre-badge mb-2">ホラー</span>
+                            <h5 class="card-title fw-bold">Game 3</h5>
                             <p class="text-muted mb-2">
-                                <i class="bi bi-building text-danger"></i> Zepp Tokyo
+                                <i class="bi bi-building text-danger"></i> 制作会社名
                             </p>
                             <p class="card-text text-muted small">
-                                日本のヒップホップシーンを代表するアーティストが集結
+                                詳細
                             </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div>
@@ -447,102 +451,103 @@
                 <h2 class="fw-bold">
                     <i class="bi bi-star-fill text-warning"></i> 人気ゲーム
                 </h2>
-                <a href="./music-artist-list.html" class="btn btn-outline-primary">すべて見る <i class="bi bi-arrow-right"></i></a>
+                <a href="./games-list.html" class="btn btn-outline-primary">すべて見る <i class="bi bi-arrow-right"></i></a>
             </div>
 
             <div class="row g-4">
                 <div class="col-6 col-md-3">
                     <div class="artist-card text-center">
-                        <img src="img/UNDERTALE.png" class="artist-img mb-3"
+                        <img src="img/games/UNDERTALE.png" class="artist-img mb-3"
                             alt="UNDERTALE">
                         <h5 class="fw-bold mb-1">UNDERTALE</h5>
                         <p class="text-muted small mb-2">Toby Fox</p>
                         <div class="d-flex justify-content-center gap-2">
-                            <span class="badge bg-danger">ロック</span>
+                            <span class="badge bg-success">RPG</span>
+                            <span class="badge bg-primary">パズル</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-6 col-md-3">
                     <div class="artist-card text-center">
-                        <img src="./img/Lobotomy_Corporation.png" class="artist-img mb-3"
-                            alt="Lobotomy Corporation">
-                        <h5 class="fw-bold mb-1">Lobotomy Corporation</h5>
-                        <p class="text-muted small mb-2">Project Moon</p>
+                        <img src="./img/games/mario-kart-world.jpg" class="artist-img mb-3"
+                            alt="mario-kart-world">
+                        <h5 class="fw-bold mb-1">マリオカートワールド</h5>
+                        <p class="text-muted small mb-2">任天堂</p>
                         <div class="d-flex justify-content-center gap-2">
-                            <span class="badge" style="background-color: #a855f7;">EDM</span>
+                            <span class="badge bg-danger">アクション</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-6 col-md-3">
                     <div class="artist-card text-center">
-                        <img src="./img/Library_Of_Ruina.jpg" class="artist-img mb-3"
-                            alt="Library Of Ruina">
-                        <h5 class="fw-bold mb-1">Library Of Ruina</h5>
-                        <p class="text-muted small mb-2">Project Moon</p>
+                        <img src="./img/games/Minecraft.png" class="artist-img mb-3"
+                            alt="Minecraft">
+                        <h5 class="fw-bold mb-1">Minecraft</h5>
+                        <p class="text-muted small mb-2">任天堂</p>
                         <div class="d-flex justify-content-center gap-2">
-                            <span class="badge bg-info">ジャズ</span>
+                            <span class="badge bg-danger">アクション</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-6 col-md-3">
                     <div class="artist-card text-center">
-                        <img src="./img/MonsterHunterWilds.jpg" class="artist-img mb-3"
-                            alt="アーティスト4">
-                        <h5 class="fw-bold mb-1">モンスターハンターワイルズ</h5>
-                        <p class="text-muted small mb-2">アコースティック</p>
+                        <img src="./img/games/EldenRing.png" class="artist-img mb-3"
+                            alt="EldenRing">
+                        <h5 class="fw-bold mb-1">ELDEN RING</h5>
+                        <p class="text-muted small mb-2">フロムソフトウェア</p>
                         <div class="d-flex justify-content-center gap-2">
-                            <span class="badge bg-success">フォーク</span>
+                            <span class="badge bg-danger">アクション</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-6 col-md-3">
                     <div class="artist-card text-center">
-                        <img src="https://placehold.co/200x200/f59e0b/ffffff?text=Artist+5" class="artist-img mb-3"
-                            alt="アーティスト5">
-                        <h5 class="fw-bold mb-1">MC FLOW</h5>
-                        <p class="text-muted small mb-2">ラッパー</p>
+                        <img src="https://placehold.co/200x200/f59e0b/ffffff?text=Game+5" class="artist-img mb-3"
+                            alt="Game 5">
+                        <h5 class="fw-bold mb-1">Game 5</h5>
+                        <p class="text-muted small mb-2">制作会社</p>
                         <div class="d-flex justify-content-center gap-2">
-                            <span class="badge" style="background-color: #f59e0b;">ヒップホップ</span>
+                            <span class="badge bg-warning">シミュレーション</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-6 col-md-3">
                     <div class="artist-card text-center">
-                        <img src="https://placehold.co/200x200/ec4899/ffffff?text=Artist+6" class="artist-img mb-3"
-                            alt="アーティスト6">
-                        <h5 class="fw-bold mb-1">POP STARS</h5>
-                        <p class="text-muted small mb-2">ポップグループ</p>
+                        <img src="https://placehold.co/200x200/ec4899/ffffff?text=Game+6" class="artist-img mb-3"
+                            alt="Game 6">
+                        <h5 class="fw-bold mb-1">Game 6</h5>
+                        <p class="text-muted small mb-2">制作会社</p>
                         <div class="d-flex justify-content-center gap-2">
-                            <span class="badge bg-warning text-dark">ポップ</span>
+                            <span class="badge" style="background-color: #a855f7;">ノベルゲーム</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-6 col-md-3">
                     <div class="artist-card text-center">
-                        <img src="https://placehold.co/200x200/8b5cf6/ffffff?text=Artist+7" class="artist-img mb-3"
-                            alt="アーティスト7">
-                        <h5 class="fw-bold mb-1">METAL FORCE</h5>
-                        <p class="text-muted small mb-2">メタルバンド</p>
+                        <img src="https://placehold.co/200x200/8b5cf6/ffffff?text=Game+7" class="artist-img mb-3"
+                            alt="Game 7">
+                        <h5 class="fw-bold mb-1">Game 7</h5>
+                        <p class="text-muted small mb-2">制作会社</p>
                         <div class="d-flex justify-content-center gap-2">
-                            <span class="badge bg-dark">メタル</span>
+                            <span class="badge bg-dark">ホラー</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-6 col-md-3">
                     <div class="artist-card text-center">
-                        <img src="https://placehold.co/200x200/3b82f6/ffffff?text=Artist+8" class="artist-img mb-3"
-                            alt="アーティスト8">
-                        <h5 class="fw-bold mb-1">SOUL SINGER</h5>
-                        <p class="text-muted small mb-2">ソウルシンガー</p>
+                        <img src="https://placehold.co/200x200/3b82f6/ffffff?text=Game+8" class="artist-img mb-3"
+                            alt="Game 8">
+                        <h5 class="fw-bold mb-1">Game 8</h5>
+                        <p class="text-muted small mb-2">制作会社</p>
                         <div class="d-flex justify-content-center gap-2">
-                            <span class="badge bg-primary">R&B</span>
+                            <span class="badge bg-primary">パズル</span>
                         </div>
                     </div>
                 </div>
