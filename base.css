@@ -32,8 +32,8 @@ footer {
     overflow: hidden;
 }
 
-/* イベント/ゲームカード */
-.event-card {
+/* ゲームカード */
+.game-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
     border: none;
@@ -41,18 +41,18 @@ footer {
     overflow: hidden;
 }
 
-.event-card:hover {
+.game-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
-.event-card img {
+.game-card img {
     height: 250px;
     object-fit: cover;
 }
 
-/* アーティスト/制作会社カード */
-.artist-card {
+/* 制作会社カード */
+.company-card {
     transition: transform 0.3s ease;
     cursor: pointer;
     border: none;
@@ -60,11 +60,11 @@ footer {
     overflow: hidden;
 }
 
-.artist-card:hover {
+.company-card:hover {
     transform: scale(1.05);
 }
 
-.artist-img {
+.company-img {
     width: 100%;
     height: 200px;
     object-fit: cover;
