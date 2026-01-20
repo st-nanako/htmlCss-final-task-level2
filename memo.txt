@@ -24,5 +24,3 @@
     ゲーム購入  game-purchase.html
     マイゲーム  game-mygame.html
     ログイン    login.html
-
-現在のファイルの内容をゲーム紹介サイトに合うように変更してください。作業ブランチはdev-saout-uでお願いします。
