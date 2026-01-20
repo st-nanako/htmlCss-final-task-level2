@@ -1,7 +1,12 @@
 @charset "utf-8";
 
 :root {
-    --primary-color: #ff6b6b;
-    --secondary-color: #4ecdc4;
-    --accent-color: #ffe66d;
+    --primary-color: #8b5cf6;
+    --secondary-color: #ec4899;
+    --accent-color: #06b6d4;
+    --dark-bg: #18181b;
+}
+
+.navbar {
+    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--primary-color) 100%);
 }
