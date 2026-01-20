@@ -39,7 +39,7 @@
             z-index: 1;
         }
 
-        .event-card {
+        .game-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             height: 100%;
             border: none;
@@ -47,17 +47,17 @@
             overflow: hidden;
         }
 
-        .event-card:hover {
+        .game-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
         }
 
-        .event-card img {
+        .game-card img {
             height: 250px;
             object-fit: cover;
         }
 
-        .event-date-badge {
+        .release-date-badge {
             position: absolute;
             top: 15px;
             left: 15px;
@@ -67,28 +67,28 @@
             text-align: center;
         }
 
-        .event-date-badge .day {
+        .release-date-badge .day {
             font-size: 1.5rem;
             font-weight: bold;
             color: var(--primary-color);
             line-height: 1;
         }
 
-        .event-date-badge .month {
+        .release-date-badge .month {
             font-size: 0.85rem;
             color: #666;
         }
 
-        .artist-card {
+        .game-card-small {
             transition: transform 0.3s ease;
             cursor: pointer;
         }
 
-        .artist-card:hover {
+        .game-card-small:hover {
             transform: scale(1.05);
         }
 
-        .artist-img {
+        .game-img {
             width: 100%;
             height: 200px;
             object-fit: cover;
@@ -241,11 +241,11 @@
 
             <div class="row g-4">
                 <div class="col-md-4">
-                    <div class="card event-card">
+                    <div class="card game-card">
                         <div class="position-relative">
                             <img src="./img/games/REANIMAL.png" class="card-img-top"
                                 alt="Summer Festival">
-                            <div class="event-date-badge">
+                            <div class="release-date-badge">
                                 <div class="year">2026年</div>
                                 <div class="day">13</div>
                                 <div class="month">2月</div>
@@ -275,11 +275,11 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card event-card">
+                    <div class="card game-card">
                         <div class="position-relative">
                             <img src="img/games/honokurasi.jpg" class="card-img-top"
                                 alt="Rock Night">
-                            <div class="event-date-badge">
+                            <div class="release-date-badge">
                                 <div class="year">2026年</div>
                                 <div class="day">30</div>
                                 <div class="month">7月</div>
@@ -308,11 +308,11 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card event-card">
+                    <div class="card game-card">
                         <div class="position-relative">
                             <img src="./img/games/Chihuahua Controller.jpg" class="card-img-top"
                                 alt="Chihuahua Controller">
-                            <div class="event-date-badge">
+                            <div class="release-date-badge">
                                 <div class="year">2026年</div>
                                 <div class="day">9</div>
                                 <div class="month">1月</div>
@@ -340,11 +340,11 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card event-card">
+                    <div class="card game-card">
                         <div class="position-relative">
                             <img src="https://placehold.co/400x250/a855f7/ffffff?text=Game+1" class="card-img-top"
                                 alt="Game 1">
-                            <div class="event-date-badge">
+                            <div class="release-date-badge">
                                 <div class="year">2026年</div>
                                 <div class="day">20</div>
                                 <div class="month">12月</div>
@@ -373,11 +373,11 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card event-card">
+                    <div class="card game-card">
                         <div class="position-relative">
                             <img src="https://placehold.co/400x250/10b981/ffffff?text=Game+2"
                                 class="card-img-top" alt="Game 2">
-                            <div class="event-date-badge">
+                            <div class="release-date-badge">
                                 <div class="year">2026年</div>
                                 <div class="day">25</div>
                                 <div class="month">12月</div>
@@ -406,11 +406,11 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="card event-card">
+                    <div class="card game-card">
                         <div class="position-relative">
                             <img src="https://placehold.co/400x250/f59e0b/ffffff?text=Game+3" class="card-img-top"
                                 alt="Game 1">
-                            <div class="event-date-badge">
+                            <div class="release-date-badge">
                                 <div class="year">2026年</div>
                                 <div class="day">28</div>
                                 <div class="month">2月</div>
@@ -451,8 +451,8 @@
 
             <div class="row g-4">
                 <div class="col-6 col-md-3">
-                    <div class="artist-card text-center">
-                        <img src="img/games/UNDERTALE.png" class="artist-img mb-3"
+                    <div class="game-card-small text-center">
+                        <img src="img/games/UNDERTALE.png" class="game-img mb-3"
                             alt="UNDERTALE">
                         <h5 class="fw-bold mb-1">UNDERTALE</h5>
                         <p class="text-muted small mb-2">Toby Fox</p>
@@ -464,8 +464,8 @@
                 </div>
 
                 <div class="col-6 col-md-3">
-                    <div class="artist-card text-center">
-                        <img src="./img/games/mario-kart-world.jpg" class="artist-img mb-3"
+                    <div class="game-card-small text-center">
+                        <img src="./img/games/mario-kart-world.jpg" class="game-img mb-3"
                             alt="mario-kart-world">
                         <h5 class="fw-bold mb-1">マリオカートワールド</h5>
                         <p class="text-muted small mb-2">任天堂</p>
@@ -476,8 +476,8 @@
                 </div>
 
                 <div class="col-6 col-md-3">
-                    <div class="artist-card text-center">
-                        <img src="./img/games/Minecraft.png" class="artist-img mb-3"
+                    <div class="game-card-small text-center">
+                        <img src="./img/games/Minecraft.png" class="game-img mb-3"
                             alt="Minecraft">
                         <h5 class="fw-bold mb-1">Minecraft</h5>
                         <p class="text-muted small mb-2">任天堂</p>
@@ -488,8 +488,8 @@
                 </div>
 
                 <div class="col-6 col-md-3">
-                    <div class="artist-card text-center">
-                        <img src="./img/games/EldenRing.png" class="artist-img mb-3"
+                    <div class="game-card-small text-center">
+                        <img src="./img/games/EldenRing.png" class="game-img mb-3"
                             alt="EldenRing">
                         <h5 class="fw-bold mb-1">ELDEN RING</h5>
                         <p class="text-muted small mb-2">フロムソフトウェア</p>
@@ -500,8 +500,8 @@
                 </div>
 
                 <div class="col-6 col-md-3">
-                    <div class="artist-card text-center">
-                        <img src="https://placehold.co/200x200/f59e0b/ffffff?text=Game+5" class="artist-img mb-3"
+                    <div class="game-card-small text-center">
+                        <img src="https://placehold.co/200x200/f59e0b/ffffff?text=Game+5" class="game-img mb-3"
                             alt="Game 5">
                         <h5 class="fw-bold mb-1">Game 5</h5>
                         <p class="text-muted small mb-2">制作会社</p>
@@ -512,8 +512,8 @@
                 </div>
 
                 <div class="col-6 col-md-3">
-                    <div class="artist-card text-center">
-                        <img src="https://placehold.co/200x200/ec4899/ffffff?text=Game+6" class="artist-img mb-3"
+                    <div class="game-card-small text-center">
+                        <img src="https://placehold.co/200x200/ec4899/ffffff?text=Game+6" class="game-img mb-3"
                             alt="Game 6">
                         <h5 class="fw-bold mb-1">Game 6</h5>
                         <p class="text-muted small mb-2">制作会社</p>
@@ -524,8 +524,8 @@
                 </div>
 
                 <div class="col-6 col-md-3">
-                    <div class="artist-card text-center">
-                        <img src="https://placehold.co/200x200/8b5cf6/ffffff?text=Game+7" class="artist-img mb-3"
+                    <div class="game-card-small text-center">
+                        <img src="https://placehold.co/200x200/8b5cf6/ffffff?text=Game+7" class="game-img mb-3"
                             alt="Game 7">
                         <h5 class="fw-bold mb-1">Game 7</h5>
                         <p class="text-muted small mb-2">制作会社</p>
@@ -536,8 +536,8 @@
                 </div>
 
                 <div class="col-6 col-md-3">
-                    <div class="artist-card text-center">
-                        <img src="https://placehold.co/200x200/3b82f6/ffffff?text=Game+8" class="artist-img mb-3"
+                    <div class="game-card-small text-center">
+                        <img src="https://placehold.co/200x200/3b82f6/ffffff?text=Game+8" class="game-img mb-3"
                             alt="Game 8">
                         <h5 class="fw-bold mb-1">Game 8</h5>
                         <p class="text-muted small mb-2">制作会社</p>
