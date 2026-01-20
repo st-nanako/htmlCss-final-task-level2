@@ -126,7 +126,7 @@
                         <a class="nav-link" href="./game-companies.html">制作会社一覧</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ゲーム購入</a>
+                        <a class="nav-link" href="./game-purchase.html">ゲーム購入</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#">マイゲーム</a>
@@ -143,9 +143,9 @@
     <div class="page-header">
         <div class="container text-center">
             <h1 class="display-4 fw-bold mb-3">
-                <i class="bi bi-ticket-perforated-fill"></i> マイチケット
+                <i class="bi bi-collection-fill"></i> マイゲーム
             </h1>
-            <p class="lead">あなたのチケット情報と参加履歴</p>
+            <p class="lead">あなたの購入済みゲームとプレイ履歴</p>
         </div>
     </div>
 
@@ -155,10 +155,10 @@
             <div class="col-md-3">
                 <div class="stat-card text-center">
                     <div class="stat-icon mx-auto" style="background: rgba(139, 92, 246, 0.1); color: var(--primary-color);">
-                        <i class="bi bi-ticket-perforated-fill"></i>
+                        <i class="bi bi-controller"></i>
                     </div>
-                    <h3 class="fw-bold mb-1">3</h3>
-                    <p class="text-muted mb-0">保有チケット</p>
+                    <h3 class="fw-bold mb-1">8</h3>
+                    <p class="text-muted mb-0">購入済みゲーム</p>
                 </div>
             </div>
             <div class="col-md-3">
@@ -166,8 +166,8 @@
                     <div class="stat-icon mx-auto" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">
                         <i class="bi bi-check-circle-fill"></i>
                     </div>
-                    <h3 class="fw-bold mb-1">12</h3>
-                    <p class="text-muted mb-0">参加済みイベント</p>
+                    <h3 class="fw-bold mb-1">5</h3>
+                    <p class="text-muted mb-0">クリア済み</p>
                 </div>
             </div>
             <div class="col-md-3">
@@ -175,17 +175,17 @@
                     <div class="stat-icon mx-auto" style="background: rgba(236, 72, 153, 0.1); color: var(--secondary-color);">
                         <i class="bi bi-heart-fill"></i>
                     </div>
-                    <h3 class="fw-bold mb-1">8</h3>
-                    <p class="text-muted mb-0">お気に入り</p>
+                    <h3 class="fw-bold mb-1">12</h3>
+                    <p class="text-muted mb-0">ウィッシュリスト</p>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="stat-card text-center">
                     <div class="stat-icon mx-auto" style="background: rgba(6, 182, 212, 0.1); color: var(--accent-color);">
-                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-clock-fill"></i>
                     </div>
-                    <h3 class="fw-bold mb-1">4.8</h3>
-                    <p class="text-muted mb-0">平均満足度</p>
+                    <h3 class="fw-bold mb-1">245h</h3>
+                    <p class="text-muted mb-0">総プレイ時間</p>
                 </div>
             </div>
         </div>
@@ -194,38 +194,38 @@
         <ul class="nav nav-pills mb-4" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link tab-btn active" id="upcoming-tab" data-bs-toggle="pill" data-bs-target="#upcoming" type="button" role="tab">
-                    <i class="bi bi-calendar-event"></i> 参加予定 (3)
+                    <i class="bi bi-play-circle"></i> プレイ中 (3)
                 </button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link tab-btn" id="history-tab" data-bs-toggle="pill" data-bs-target="#history" type="button" role="tab">
-                    <i class="bi bi-clock-history"></i> 参加履歴 (12)
+                    <i class="bi bi-clock-history"></i> プレイ履歴 (5)
                 </button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link tab-btn" id="cancelled-tab" data-bs-toggle="pill" data-bs-target="#cancelled" type="button" role="tab">
-                    <i class="bi bi-x-circle"></i> キャンセル済み (2)
+                    <i class="bi bi-heart"></i> ウィッシュリスト (12)
                 </button>
             </li>
         </ul>
 
         <!-- タブコンテンツ -->
         <div class="tab-content" id="myTabContent">
-            <!-- 参加予定タブ -->
+            <!-- プレイ中タブ -->
             <div class="tab-pane fade show active" id="upcoming" role="tabpanel">
-                <!-- チケットカード1 -->
+                <!-- ゲームカード1 -->
                 <div class="ticket-card">
                     <div class="ticket-header">
                         <div class="row align-items-center">
                             <div class="col-md-8">
-                                <span class="badge bg-warning text-dark mb-2">開催まで 15日</span>
-                                <h4 class="fw-bold mb-2">SUMMER MUSIC FESTIVAL 2024</h4>
-                                <p class="mb-1"><i class="bi bi-calendar-event"></i> 2024年12月3日（火） 16:00 開演</p>
-                                <p class="mb-0"><i class="bi bi-geo-alt-fill"></i> 東京ビッグサイト</p>
+                                <span class="badge bg-warning text-dark mb-2">プレイ中</span>
+                                <h4 class="fw-bold mb-2">REANIMAL</h4>
+                                <p class="mb-1"><i class="bi bi-calendar-event"></i> 購入日: 2026年1月15日</p>
+                                <p class="mb-0"><i class="bi bi-building"></i> Tarsier Studios</p>
                             </div>
                             <div class="col-md-4 text-md-end">
                                 <div class="qr-code">
-                                    <i class="bi bi-qr-code text-dark"></i>
+                                    <i class="bi bi-controller text-dark"></i>
                                 </div>
                             </div>
                         </div>
@@ -233,46 +233,46 @@
                     <div class="card-body p-4">
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <h6 class="text-muted mb-2">チケット情報</h6>
-                                <p class="mb-1"><strong>チケットタイプ:</strong> 一般チケット</p>
-                                <p class="mb-1"><strong>座席:</strong> エリアA - A3</p>
-                                <p class="mb-1"><strong>チケット番号:</strong> #TK-2024-001234</p>
-                                <p class="mb-0"><strong>購入日:</strong> 2024年11月1日</p>
+                                <h6 class="text-muted mb-2">ゲーム情報</h6>
+                                <p class="mb-1"><strong>エディション:</strong> デラックスエディション</p>
+                                <p class="mb-1"><strong>プラットフォーム:</strong> PS5</p>
+                                <p class="mb-1"><strong>進行状況:</strong> 35%</p>
+                                <p class="mb-0"><strong>プレイ時間:</strong> 12時間30分</p>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <h6 class="text-muted mb-2">料金</h6>
-                                <p class="mb-1">チケット代: ¥8,000</p>
-                                <p class="mb-1">システム手数料: ¥800</p>
-                                <p class="mb-0"><strong>合計: ¥8,800</strong></p>
+                                <h6 class="text-muted mb-2">価格</h6>
+                                <p class="mb-1">ゲーム価格: ¥7,980</p>
+                                <p class="mb-1">システム手数料: ¥798</p>
+                                <p class="mb-0"><strong>合計: ¥8,778</strong></p>
                             </div>
                         </div>
                         <div class="d-flex gap-2 mt-3">
                             <button class="btn btn-primary">
-                                <i class="bi bi-qr-code"></i> QRコードを表示
+                                <i class="bi bi-play-fill"></i> プレイ開始
                             </button>
                             <button class="btn btn-outline-primary">
-                                <i class="bi bi-download"></i> チケットをダウンロード
+                                <i class="bi bi-info-circle"></i> ゲーム詳細
                             </button>
                             <button class="btn btn-outline-secondary">
-                                <i class="bi bi-info-circle"></i> イベント詳細
+                                <i class="bi bi-trophy"></i> 実績確認
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- チケットカード2 -->
+                <!-- ゲームカード2 -->
                 <div class="ticket-card">
                     <div class="ticket-header">
                         <div class="row align-items-center">
                             <div class="col-md-8">
-                                <span class="badge bg-warning text-dark mb-2">開催まで 22日</span>
-                                <h4 class="fw-bold mb-2">ROCK NIGHT JAPAN</h4>
-                                <p class="mb-1"><i class="bi bi-calendar-event"></i> 2024年12月10日（火） 19:00 開演</p>
-                                <p class="mb-0"><i class="bi bi-geo-alt-fill"></i> 大阪城ホール</p>
+                                <span class="badge bg-success mb-2">プレイ中</span>
+                                <h4 class="fw-bold mb-2">ELDEN RING</h4>
+                                <p class="mb-1"><i class="bi bi-calendar-event"></i> 購入日: 2025年12月20日</p>
+                                <p class="mb-0"><i class="bi bi-building"></i> フロムソフトウェア</p>
                             </div>
                             <div class="col-md-4 text-md-end">
                                 <div class="qr-code">
-                                    <i class="bi bi-qr-code text-dark"></i>
+                                    <i class="bi bi-controller text-dark"></i>
                                 </div>
                             </div>
                         </div>
@@ -280,46 +280,46 @@
                     <div class="card-body p-4">
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <h6 class="text-muted mb-2">チケット情報</h6>
-                                <p class="mb-1"><strong>チケットタイプ:</strong> VIPチケット</p>
-                                <p class="mb-1"><strong>座席:</strong> VIPエリア - V12</p>
-                                <p class="mb-1"><strong>チケット番号:</strong> #TK-2024-001567</p>
-                                <p class="mb-0"><strong>購入日:</strong> 2024年10月28日</p>
+                                <h6 class="text-muted mb-2">ゲーム情報</h6>
+                                <p class="mb-1"><strong>エディション:</strong> 通常版</p>
+                                <p class="mb-1"><strong>プラットフォーム:</strong> Steam</p>
+                                <p class="mb-1"><strong>進行状況:</strong> 68%</p>
+                                <p class="mb-0"><strong>プレイ時間:</strong> 85時間15分</p>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <h6 class="text-muted mb-2">料金</h6>
-                                <p class="mb-1">チケット代: ¥15,000</p>
-                                <p class="mb-1">システム手数料: ¥1,500</p>
-                                <p class="mb-0"><strong>合計: ¥16,500</strong></p>
+                                <h6 class="text-muted mb-2">価格</h6>
+                                <p class="mb-1">ゲーム価格: ¥8,800</p>
+                                <p class="mb-1">システム手数料: ¥880</p>
+                                <p class="mb-0"><strong>合計: ¥9,680</strong></p>
                             </div>
                         </div>
                         <div class="d-flex gap-2 mt-3">
                             <button class="btn btn-primary">
-                                <i class="bi bi-qr-code"></i> QRコードを表示
+                                <i class="bi bi-play-fill"></i> プレイ開始
                             </button>
                             <button class="btn btn-outline-primary">
-                                <i class="bi bi-download"></i> チケットをダウンロード
+                                <i class="bi bi-info-circle"></i> ゲーム詳細
                             </button>
                             <button class="btn btn-outline-secondary">
-                                <i class="bi bi-info-circle"></i> イベント詳細
+                                <i class="bi bi-trophy"></i> 実績確認
                             </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- チケットカード3 -->
+                <!-- ゲームカード3 -->
                 <div class="ticket-card">
                     <div class="ticket-header">
                         <div class="row align-items-center">
                             <div class="col-md-8">
-                                <span class="badge bg-info mb-2">開催まで 37日</span>
-                                <h4 class="fw-bold mb-2">WINTER ROCK FESTIVAL</h4>
-                                <p class="mb-1"><i class="bi bi-calendar-event"></i> 2024年12月25日（水） 18:00 開演</p>
-                                <p class="mb-0"><i class="bi bi-geo-alt-fill"></i> 横浜アリーナ</p>
+                                <span class="badge bg-info mb-2">プレイ中</span>
+                                <h4 class="fw-bold mb-2">Minecraft</h4>
+                                <p class="mb-1"><i class="bi bi-calendar-event"></i> 購入日: 2025年11月5日</p>
+                                <p class="mb-0"><i class="bi bi-building"></i> Mojang Studios</p>
                             </div>
                             <div class="col-md-4 text-md-end">
                                 <div class="qr-code">
-                                    <i class="bi bi-qr-code text-dark"></i>
+                                    <i class="bi bi-controller text-dark"></i>
                                 </div>
                             </div>
                         </div>
@@ -327,46 +327,46 @@
                     <div class="card-body p-4">
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <h6 class="text-muted mb-2">チケット情報</h6>
-                                <p class="mb-1"><strong>チケットタイプ:</strong> ペアチケット</p>
-                                <p class="mb-1"><strong>座席:</strong> エリアB - D5, D6</p>
-                                <p class="mb-1"><strong>チケット番号:</strong> #TK-2024-001890</p>
-                                <p class="mb-0"><strong>購入日:</strong> 2024年11月5日</p>
+                                <h6 class="text-muted mb-2">ゲーム情報</h6>
+                                <p class="mb-1"><strong>エディション:</strong> Java & Bedrock</p>
+                                <p class="mb-1"><strong>プラットフォーム:</strong> PC</p>
+                                <p class="mb-1"><strong>進行状況:</strong> サンドボックス</p>
+                                <p class="mb-0"><strong>プレイ時間:</strong> 147時間45分</p>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <h6 class="text-muted mb-2">料金</h6>
-                                <p class="mb-1">チケット代: ¥12,000</p>
-                                <p class="mb-1">システム手数料: ¥1,200</p>
-                                <p class="mb-0"><strong>合計: ¥13,200</strong></p>
+                                <h6 class="text-muted mb-2">価格</h6>
+                                <p class="mb-1">ゲーム価格: ¥3,960</p>
+                                <p class="mb-1">システム手数料: ¥396</p>
+                                <p class="mb-0"><strong>合計: ¥4,356</strong></p>
                             </div>
                         </div>
                         <div class="d-flex gap-2 mt-3">
                             <button class="btn btn-primary">
-                                <i class="bi bi-qr-code"></i> QRコードを表示
+                                <i class="bi bi-play-fill"></i> プレイ開始
                             </button>
                             <button class="btn btn-outline-primary">
-                                <i class="bi bi-download"></i> チケットをダウンロード
+                                <i class="bi bi-info-circle"></i> ゲーム詳細
                             </button>
                             <button class="btn btn-outline-secondary">
-                                <i class="bi bi-info-circle"></i> イベント詳細
+                                <i class="bi bi-trophy"></i> 実績確認
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- 参加履歴タブ -->
+            <!-- プレイ履歴タブ -->
             <div class="tab-pane fade" id="history" role="tabpanel">
                 <div class="table-card">
-                    <h4 class="fw-bold mb-4"><i class="bi bi-clock-history"></i> 参加履歴</h4>
+                    <h4 class="fw-bold mb-4"><i class="bi bi-clock-history"></i> プレイ履歴</h4>
                     <div class="table-responsive">
                         <table class="table table-hover">
                             <thead class="table-light">
                                 <tr>
-                                    <th>イベント名</th>
-                                    <th>開催日</th>
-                                    <th>会場</th>
-                                    <th>チケットタイプ</th>
+                                    <th>ゲーム名</th>
+                                    <th>クリア日</th>
+                                    <th>プラットフォーム</th>
+                                    <th>プレイ時間</th>
                                     <th>ステータス</th>
                                     <th>評価</th>
                                 </tr>
@@ -374,12 +374,12 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <strong>AUTUMN MUSIC FEST 2024</strong>
+                                        <strong>UNDERTALE</strong>
                                     </td>
-                                    <td>2024年11月10日</td>
-                                    <td>幕張メッセ</td>
-                                    <td>一般チケット</td>
-                                    <td><span class="badge bg-success status-badge">参加済み</span></td>
+                                    <td>2025年12月10日</td>
+                                    <td>Steam</td>
+                                    <td>18時間</td>
+                                    <td><span class="badge bg-success status-badge">クリア済み</span></td>
                                     <td>
                                         <div class="text-warning">
                                             <i class="bi bi-star-fill"></i>
@@ -392,12 +392,12 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <strong>JAZZ NIGHT TOKYO</strong>
+                                        <strong>マリオカートワールド</strong>
                                     </td>
-                                    <td>2024年10月25日</td>
-                                    <td>ブルーノート東京</td>
-                                    <td>VIPチケット</td>
-                                    <td><span class="badge bg-success status-badge">参加済み</span></td>
+                                    <td>2025年11月25日</td>
+                                    <td>Nintendo Switch</td>
+                                    <td>45時間</td>
+                                    <td><span class="badge bg-success status-badge">クリア済み</span></td>
                                     <td>
                                         <div class="text-warning">
                                             <i class="bi bi-star-fill"></i>
@@ -410,12 +410,12 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <strong>URBAN BEATS FESTIVAL</strong>
+                                        <strong>ほの暮しの庭</strong>
                                     </td>
-                                    <td>2024年10月5日</td>
-                                    <td>Zepp Tokyo</td>
-                                    <td>一般チケット</td>
-                                    <td><span class="badge bg-success status-badge">参加済み</span></td>
+                                    <td>2025年10月5日</td>
+                                    <td>PS5</td>
+                                    <td>62時間</td>
+                                    <td><span class="badge bg-success status-badge">クリア済み</span></td>
                                     <td>
                                         <div class="text-warning">
                                             <i class="bi bi-star-fill"></i>
@@ -428,12 +428,12 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <strong>ELECTRO WAVE 2024</strong>
+                                        <strong>Chihuahua Controller</strong>
                                     </td>
-                                    <td>2024年9月20日</td>
-                                    <td>東京ドーム</td>
-                                    <td>ペアチケット</td>
-                                    <td><span class="badge bg-success status-badge">参加済み</span></td>
+                                    <td>2025年9月20日</td>
+                                    <td>Steam</td>
+                                    <td>8時間</td>
+                                    <td><span class="badge bg-success status-badge">クリア済み</span></td>
                                     <td>
                                         <div class="text-warning">
                                             <i class="bi bi-star-fill"></i>
@@ -446,12 +446,12 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <strong>SUMMER SONIC 2024</strong>
+                                        <strong>The Last Guardian</strong>
                                     </td>
-                                    <td>2024年8月15日</td>
-                                    <td>ZOZOマリンスタジアム</td>
-                                    <td>VIPチケット</td>
-                                    <td><span class="badge bg-success status-badge">参加済み</span></td>
+                                    <td>2025年8月15日</td>
+                                    <td>PS4</td>
+                                    <td>14時間</td>
+                                    <td><span class="badge bg-success status-badge">クリア済み</span></td>
                                     <td>
                                         <div class="text-warning">
                                             <i class="bi bi-star-fill"></i>
@@ -483,42 +483,62 @@
                 </div>
             </div>
 
-            <!-- キャンセル済みタブ -->
+            <!-- ウィッシュリストタブ -->
             <div class="tab-pane fade" id="cancelled" role="tabpanel">
                 <div class="table-card">
-                    <h4 class="fw-bold mb-4"><i class="bi bi-x-circle"></i> キャンセル済みチケット</h4>
+                    <h4 class="fw-bold mb-4"><i class="bi bi-heart"></i> ウィッシュリスト</h4>
                     <div class="table-responsive">
                         <table class="table table-hover">
                             <thead class="table-light">
                                 <tr>
-                                    <th>イベント名</th>
-                                    <th>開催日</th>
-                                    <th>会場</th>
-                                    <th>キャンセル日</th>
-                                    <th>返金額</th>
-                                    <th>ステータス</th>
+                                    <th>ゲーム名</th>
+                                    <th>発売日</th>
+                                    <th>開発会社</th>
+                                    <th>追加日</th>
+                                    <th>価格</th>
+                                    <th>アクション</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>
-                                        <strong>SPRING MUSIC FESTIVAL</strong>
+                                        <strong>Ghost of Tsushima 2</strong>
                                     </td>
-                                    <td>2024年5月12日</td>
-                                    <td>さいたまスーパーアリーナ</td>
-                                    <td>2024年4月20日</td>
-                                    <td>¥7,200</td>
-                                    <td><span class="badge bg-danger status-badge">キャンセル済み</span></td>
+                                    <td>2026年5月12日</td>
+                                    <td>Sucker Punch</td>
+                                    <td>2026年1月10日</td>
+                                    <td>¥8,800</td>
+                                    <td><button class="btn btn-sm btn-primary">購入</button></td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <strong>ROCK LEGENDS 2024</strong>
+                                        <strong>Hollow Knight: Silksong</strong>
                                     </td>
-                                    <td>2024年7月8日</td>
-                                    <td>横浜アリーナ</td>
-                                    <td>2024年6月15日</td>
-                                    <td>¥8,100</td>
-                                    <td><span class="badge bg-danger status-badge">キャンセル済み</span></td>
+                                    <td>2026年7月8日</td>
+                                    <td>Team Cherry</td>
+                                    <td>2025年12月15日</td>
+                                    <td>¥3,480</td>
+                                    <td><button class="btn btn-sm btn-primary">購入</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Persona 6</strong>
+                                    </td>
+                                    <td>2026年9月25日</td>
+                                    <td>Atlus</td>
+                                    <td>2025年11月20日</td>
+                                    <td>¥9,878</td>
+                                    <td><button class="btn btn-sm btn-primary">購入</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>The Legend of Zelda: Echoes</strong>
+                                    </td>
+                                    <td>2026年11月15日</td>
+                                    <td>Nintendo</td>
+                                    <td>2026年1月5日</td>
+                                    <td>¥7,678</td>
+                                    <td><button class="btn btn-sm btn-primary">購入</button></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -533,8 +553,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-3">
-                    <h5 class="fw-bold mb-3"><i class="bi bi-music-note-beamed"></i> LiveHub</h5>
-                    <p class="text-light">音楽で繋がる、最高の体験をあなたに。</p>
+                    <h5 class="fw-bold mb-3"><i class="bi bi-controller"></i> GameHub</h5>
+                    <p class="text-light">ゲームで繋がる、最高の体験をあなたに。</p>
                 </div>
                 <div class="col-md-2 mb-3">
                     <h6 class="fw-bold mb-3">サイト情報</h6>
@@ -563,7 +583,7 @@
                 </div>
             </div>
             <hr class="border-light">
-            <p class="text-center text-light mb-0">&copy; 2024 LiveHub. All rights reserved.</p>
+            <p class="text-center text-light mb-0">&copy; 2024 GameHub. All rights reserved.</p>
         </div>
     </footer>
 

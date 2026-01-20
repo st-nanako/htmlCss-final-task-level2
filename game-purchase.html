@@ -238,9 +238,9 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#" class="text-white">ホーム</a></li>
-                    <li class="breadcrumb-item"><a href="#" class="text-white">イベント詳細</a></li>
-                    <li class="breadcrumb-item active text-white" aria-current="page">チケット購入</li>
+                    <li class="breadcrumb-item"><a href="./index.html" class="text-white">ホーム</a></li>
+                    <li class="breadcrumb-item"><a href="./game-detail.html" class="text-white">ゲーム詳細</a></li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">ゲーム購入</li>
                 </ol>
             </nav>
             <h1 class="display-4 fw-bold mb-3">ゲーム購入</h1>
@@ -256,11 +256,11 @@
                 <div class="step-circle">
                     <i class="bi bi-check-lg"></i>
                 </div>
-                <div class="fw-bold">チケット選択</div>
+                <div class="fw-bold">エディション選択</div>
             </div>
             <div class="step active">
                 <div class="step-circle">2</div>
-                <div class="fw-bold">座席選択</div>
+                <div class="fw-bold">プラットフォーム選択</div>
             </div>
             <div class="step">
                 <div class="step-circle">3</div>
@@ -279,101 +279,102 @@
         <div class="row">
             <!-- メインコンテンツ -->
             <div class="col-lg-8">
-                <!-- チケット種類選択 -->
+                <!-- エディション選択 -->
                 <div class="mb-4">
-                    <h3 class="fw-bold mb-4"><i class="bi bi-ticket-perforated text-primary"></i> チケット種類を選択</h3>
+                    <h3 class="fw-bold mb-4"><i class="bi bi-box-seam text-primary"></i> エディションを選択</h3>
                     
                     <div class="row g-3">
                         <div class="col-md-6">
-                            <div class="ticket-card" data-price="8000" data-type="一般チケット">
+                            <div class="ticket-card" data-price="5720" data-type="通常版">
                                 <div class="d-flex justify-content-between align-items-start mb-3">
                                     <div>
-                                        <h5 class="fw-bold mb-1">一般チケット</h5>
-                                        <span class="badge bg-success">販売中</span>
+                                        <h5 class="fw-bold mb-1">通常版</h5>
+                                        <span class="badge bg-success">予約受付中</span>
                                     </div>
-                                    <div class="price-tag">¥8,000</div>
+                                    <div class="price-tag">¥5,720</div>
                                 </div>
                                 <ul class="list-unstyled mb-0">
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 全ステージ入場可能</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 再入場可能</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> グッズ購入可能</li>
-                                    <li><i class="bi bi-check-circle-fill text-success"></i> フードエリア利用可能</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> ゲーム本編</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> デジタルダウンロード版</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 発売日に即プレイ可能</li>
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> 日本語対応</li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="col-md-6">
-                            <div class="ticket-card" data-price="15000" data-type="VIPチケット">
+                            <div class="ticket-card" data-price="7980" data-type="デラックスエディション">
                                 <div class="d-flex justify-content-between align-items-start mb-3">
                                     <div>
-                                        <h5 class="fw-bold mb-1">VIPチケット</h5>
-                                        <span class="badge bg-warning text-dark">残りわずか</span>
+                                        <h5 class="fw-bold mb-1">デラックスエディション</h5>
+                                        <span class="badge bg-warning text-dark">人気</span>
                                     </div>
-                                    <div class="price-tag">¥15,000</div>
+                                    <div class="price-tag">¥7,980</div>
                                 </div>
                                 <ul class="list-unstyled mb-0">
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> VIPエリア入場可能</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 優先入場</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 専用ラウンジ利用可能</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 限定グッズ付き</li>
-                                    <li><i class="bi bi-check-circle-fill text-success"></i> ドリンク2杯無料</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> ゲーム本編</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> シーズンパス同梱</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> デジタルアートブック</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> オリジナルサウンドトラック</li>
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> 限定スキン3種</li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="col-md-6">
-                            <div class="ticket-card" data-price="6000" data-type="学生チケット">
+                            <div class="ticket-card" data-price="12800" data-type="コレクターズエディション">
                                 <div class="d-flex justify-content-between align-items-start mb-3">
                                     <div>
-                                        <h5 class="fw-bold mb-1">学生チケット</h5>
-                                        <span class="badge bg-info">要学生証</span>
+                                        <h5 class="fw-bold mb-1">コレクターズエディション</h5>
+                                        <span class="badge bg-danger">限定版</span>
                                     </div>
-                                    <div class="price-tag">¥6,000</div>
+                                    <div class="price-tag">¥12,800</div>
                                 </div>
                                 <ul class="list-unstyled mb-0">
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 全ステージ入場可能</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 再入場可能</li>
-                                    <li class="mb-2"><i class="bi bi-exclamation-circle-fill text-warning"></i> 当日学生証の提示必須</li>
-                                    <li><i class="bi bi-check-circle-fill text-success"></i> 25歳以下限定</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> デラックス版の全コンテンツ</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> スチールブックケース</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> フィギュア(高さ20cm)</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 設定資料集(ハードカバー)</li>
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> 特製BOX入り</li>
                                 </ul>
                             </div>
                         </div>
 
                         <div class="col-md-6">
-                            <div class="ticket-card" data-price="12000" data-type="ペアチケット">
+                            <div class="ticket-card" data-price="6200" data-type="ダウンロード版+DLC">
                                 <div class="d-flex justify-content-between align-items-start mb-3">
                                     <div>
-                                        <h5 class="fw-bold mb-1">ペアチケット</h5>
-                                        <span class="badge bg-danger">お得</span>
+                                        <h5 class="fw-bold mb-1">ダウンロード版+DLC</h5>
+                                        <span class="badge bg-info">お得</span>
                                     </div>
-                                    <div class="price-tag">¥12,000</div>
+                                    <div class="price-tag">¥6,200</div>
                                 </div>
                                 <ul class="list-unstyled mb-0">
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 2名分のチケット</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 通常より¥4,000お得</li>
-                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 隣同士の座席保証</li>
-                                    <li><i class="bi bi-check-circle-fill text-success"></i> オリジナルグッズ付き</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> ゲーム本編</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 発売日DLC同梱</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success"></i> 特別衣装パック</li>
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> 早期購入特典付き</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- 座席選択 -->
+                <!-- プラットフォーム選択 -->
                 <div class="mb-4">
-                    <h3 class="fw-bold mb-4"><i class="bi bi-grid-3x3-gap text-primary"></i> 座席を選択</h3>
+                    <h3 class="fw-bold mb-4"><i class="bi bi-display text-primary"></i> プラットフォームを選択</h3>
                     
                     <div class="seat-map">
-                        <!-- ステージ -->
+                        <!-- タイトル -->
                         <div class="stage">
-                            <h4 class="mb-0"><i class="bi bi-music-note-beamed"></i> STAGE</h4>
+                            <h4 class="mb-0"><i class="bi bi-controller"></i> 対応プラットフォーム</h4>
                         </div>
 
                         <!-- 凡例 -->
                         <div class="mb-4 text-center">
                             <div class="legend-item">
                                 <div class="legend-box" style="background: #10b981;"></div>
-                                <span>空席</span>
+                                <span>選択可能</span>
                             </div>
                             <div class="legend-item">
                                 <div class="legend-box" style="background: #8b5cf6;"></div>
@@ -381,113 +382,49 @@
                             </div>
                             <div class="legend-item">
                                 <div class="legend-box" style="background: #e5e7eb;"></div>
-                                <span>売り切れ</span>
+                                <span>選択不可</span>
                             </div>
                         </div>
 
-                        <!-- 座席エリア A -->
+                        <!-- プラットフォーム選択エリア -->
                         <div class="seat-section">
-                            <h6 class="fw-bold mb-3 text-center">エリア A（前方）</h6>
+                            <h6 class="fw-bold mb-3 text-center">家庭用ゲーム機</h6>
                             <div class="text-center">
                                 <div class="mb-2">
-                                    <span class="seat available">A1</span>
-                                    <span class="seat sold">A2</span>
-                                    <span class="seat available">A3</span>
-                                    <span class="seat available">A4</span>
-                                    <span class="seat sold">A5</span>
-                                    <span class="seat available">A6</span>
-                                    <span class="seat available">A7</span>
-                                    <span class="seat sold">A8</span>
-                                </div>
-                                <div class="mb-2">
-                                    <span class="seat sold">B1</span>
-                                    <span class="seat available">B2</span>
-                                    <span class="seat available">B3</span>
-                                    <span class="seat sold">B4</span>
-                                    <span class="seat available">B5</span>
-                                    <span class="seat available">B6</span>
-                                    <span class="seat sold">B7</span>
-                                    <span class="seat available">B8</span>
-                                </div>
-                                <div>
-                                    <span class="seat available">C1</span>
-                                    <span class="seat available">C2</span>
-                                    <span class="seat sold">C3</span>
-                                    <span class="seat available">C4</span>
-                                    <span class="seat available">C5</span>
-                                    <span class="seat sold">C6</span>
-                                    <span class="seat available">C7</span>
-                                    <span class="seat available">C8</span>
+                                    <span class="seat available">PS5</span>
+                                    <span class="seat available">PS4</span>
+                                    <span class="seat available">Xbox Series X/S</span>
+                                    <span class="seat available">Xbox One</span>
+                                    <span class="seat available">Nintendo Switch</span>
                                 </div>
                             </div>
                         </div>
 
                         <hr class="my-4">
 
-                        <!-- 座席エリア B -->
+                        <!-- PC プラットフォーム -->
                         <div class="seat-section">
-                            <h6 class="fw-bold mb-3 text-center">エリア B（中央）</h6>
+                            <h6 class="fw-bold mb-3 text-center">PC</h6>
                             <div class="text-center">
                                 <div class="mb-2">
-                                    <span class="seat available">D1</span>
-                                    <span class="seat available">D2</span>
-                                    <span class="seat sold">D3</span>
-                                    <span class="seat available">D4</span>
-                                    <span class="seat available">D5</span>
-                                    <span class="seat available">D6</span>
-                                    <span class="seat sold">D7</span>
-                                    <span class="seat available">D8</span>
-                                    <span class="seat available">D9</span>
-                                    <span class="seat sold">D10</span>
-                                </div>
-                                <div class="mb-2">
-                                    <span class="seat available">E1</span>
-                                    <span class="seat sold">E2</span>
-                                    <span class="seat available">E3</span>
-                                    <span class="seat available">E4</span>
-                                    <span class="seat available">E5</span>
-                                    <span class="seat sold">E6</span>
-                                    <span class="seat available">E7</span>
-                                    <span class="seat available">E8</span>
-                                    <span class="seat available">E9</span>
-                                    <span class="seat available">E10</span>
+                                    <span class="seat available">Steam</span>
+                                    <span class="seat available">Epic Games</span>
+                                    <span class="seat available">Microsoft Store</span>
+                                    <span class="seat sold">Origin</span>
                                 </div>
                             </div>
                         </div>
 
                         <hr class="my-4">
 
-                        <!-- 座席エリア C -->
+                        <!-- クラウドゲーミング -->
                         <div class="seat-section">
-                            <h6 class="fw-bold mb-3 text-center">エリア C（後方）</h6>
+                            <h6 class="fw-bold mb-3 text-center">クラウドゲーミング</h6>
                             <div class="text-center">
                                 <div class="mb-2">
-                                    <span class="seat available">F1</span>
-                                    <span class="seat available">F2</span>
-                                    <span class="seat available">F3</span>
-                                    <span class="seat available">F4</span>
-                                    <span class="seat available">F5</span>
-                                    <span class="seat available">F6</span>
-                                    <span class="seat available">F7</span>
-                                    <span class="seat available">F8</span>
-                                    <span class="seat available">F9</span>
-                                    <span class="seat available">F10</span>
-                                    <span class="seat available">F11</span>
-                                    <span class="seat available">F12</span>
-                                </div>
-                                <div>
-                                    <span class="seat available">G1</span>
-                                    <span class="seat available">G2</span>
-                                    <span class="seat available">G3</span>
-                                    <span class="seat available">G4</span>
-                                    <span class="seat available">G5</span>
-                                    <span class="seat available">G6</span>
-                                    <span class="seat available">G7</span>
-                                    <span class="seat available">G8</span>
-                                    <span class="seat available">G9</span>
-                                    <span class="seat available">G10</span>
-                                    <span class="seat available">G11</span>
-                                    <span class="seat available">G12</span>
+                                    <span class="seat available">GeForce NOW</span>
+                                    <span class="seat available">Xbox Cloud Gaming</span>
+                                    <span class="seat sold">PlayStation Now</span>
                                 </div>
                             </div>
                         </div>
@@ -498,16 +435,16 @@
                 <div class="alert alert-warning alert-custom border-warning">
                     <h5 class="alert-heading"><i class="bi bi-exclamation-triangle-fill"></i> 注意事項</h5>
                     <ul class="mb-0">
-                        <li>チケットは選択から15分以内に購入手続きを完了してください</li>
-                        <li>座席の選択は先着順です。他のユーザーが先に購入した場合、選択が解除されます</li>
-                        <li>購入後のキャンセル・変更はできません</li>
-                        <li>当日は購入完了メールまたはアプリの電子チケットが必要です</li>
+                        <li>購入手続きは15分以内に完了してください</li>
+                        <li>ダウンロード版は発売日の0時からダウンロード可能です</li>
+                        <li>購入後のキャンセル・返金はできません</li>
+                        <li>プラットフォームによって操作方法が異なる場合があります</li>
                     </ul>
                 </div>
 
                 <div class="alert alert-info alert-custom border-info">
                     <h5 class="alert-heading"><i class="bi bi-info-circle-fill"></i> お得情報</h5>
-                    <p class="mb-0">ペアチケットは通常より¥4,000お得!友達や家族と一緒に楽しもう!</p>
+                    <p class="mb-0">デラックスエディションは通常版+DLCより¥1,500以上お得！限定コンテンツも付いてきます。</p>
                 </div>
             </div>
 
@@ -517,29 +454,29 @@
                     <h5 class="fw-bold mb-4"><i class="bi bi-cart-check"></i> 購入内容</h5>
                     
                     <div class="mb-4">
-                        <h6 class="text-muted mb-3">イベント情報</h6>
-                        <p class="mb-1 fw-bold">SUMMER MUSIC FESTIVAL 2024</p>
+                        <h6 class="text-muted mb-3">ゲーム情報</h6>
+                        <p class="mb-1 fw-bold">REANIMAL</p>
                         <p class="mb-1 small text-muted">
-                            <i class="bi bi-calendar-event"></i> 2024年12月3日（火）
+                            <i class="bi bi-calendar-event"></i> 2026年2月13日発売
                         </p>
                         <p class="mb-0 small text-muted">
-                            <i class="bi bi-geo-alt-fill"></i> 東京ビッグサイト
+                            <i class="bi bi-building"></i> Tarsier Studios
                         </p>
                     </div>
 
                     <hr>
 
                     <div class="mb-4">
-                        <h6 class="text-muted mb-3">選択中のチケット</h6>
+                        <h6 class="text-muted mb-3">選択中のエディション</h6>
                         <div id="selectedTicket" class="text-muted">
-                            チケットを選択してください
+                            エディションを選択してください
                         </div>
                     </div>
 
                     <div class="mb-4">
-                        <h6 class="text-muted mb-3">選択中の座席</h6>
+                        <h6 class="text-muted mb-3">選択中のプラットフォーム</h6>
                         <div id="selectedSeats" class="text-muted">
-                            座席を選択してください
+                            プラットフォームを選択してください
                         </div>
                     </div>
 
@@ -547,7 +484,7 @@
 
                     <div class="mb-4">
                         <div class="d-flex justify-content-between mb-2">
-                            <span>チケット料金</span>
+                            <span>ゲーム価格</span>
                             <span id="ticketPrice">¥0</span>
                         </div>
                         <div class="d-flex justify-content-between mb-2">
@@ -555,7 +492,7 @@
                             <span id="serviceFee">¥0</span>
                         </div>
                         <div class="d-flex justify-content-between mb-3">
-                            <span>配送手数料</span>
+                            <span>ダウンロード手数料</span>
                             <span>¥0</span>
                         </div>
                         <hr>
@@ -587,8 +524,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-3">
-                    <h5 class="fw-bold mb-3"><i class="bi bi-music-note-beamed"></i> LiveHub</h5>
-                    <p class="text-light">音楽で繋がる、最高の体験をあなたに。</p>
+                    <h5 class="fw-bold mb-3"><i class="bi bi-controller"></i> GameHub</h5>
+                    <p class="text-light">ゲームで繋がる、最高の体験をあなたに。</p>
                 </div>
                 <div class="col-md-2 mb-3">
                     <h6 class="fw-bold mb-3">サイト情報</h6>
@@ -676,7 +613,7 @@
                     </div>
                 `;
             } else {
-                document.getElementById('selectedSeats').innerHTML = '<span class="text-muted">座席を選択してください</span>';
+                document.getElementById('selectedSeats').innerHTML = '<span class="text-muted">プラットフォームを選択してください</span>';
             }
 
             // 料金計算
