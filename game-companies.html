@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>アーティスト一覧 - LiveHub</title>
+    <title>制作会社一覧 - GameHub</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./base.css">
@@ -148,13 +148,13 @@
     <!-- ページヘッダー -->
     <div class="page-header">
         <div class="container">
-            <h1 class="display-4 fw-bold mb-3">アーティスト一覧</h1>
-            <p class="lead">お気に入りのアーティストを見つけよう</p>
+            <h1 class="display-4 fw-bold mb-3">制作会社一覧</h1>
+            <p class="lead">お気に入りの制作会社を見つけよう</p>
             <div class="row mt-4">
                 <div class="col-md-8">
                     <div class="input-group input-group-lg">
-                        <input type="text" class="form-control" placeholder="アーティスト名で検索...">
-                        <button class="btn btn-light fw-bold" type="button">
+                        <input type="text" class="form-control" placeholder="制作会社名で検索...">
+                        <button class="btn btn-info fw-bold" type="button">
                             <i class="bi bi-search"></i> 検索
                         </button>
                     </div>
@@ -176,37 +176,37 @@
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="checkbox" id="genre1">
                             <label class="form-check-label" for="genre1">
-                                ロック <span class="badge bg-secondary">45</span>
+                                ホラー <span class="badge bg-secondary">45</span>
                             </label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="checkbox" id="genre2">
                             <label class="form-check-label" for="genre2">
-                                ポップ <span class="badge bg-secondary">38</span>
+                                アクション <span class="badge bg-secondary">38</span>
                             </label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="checkbox" id="genre3">
                             <label class="form-check-label" for="genre3">
-                                EDM <span class="badge bg-secondary">32</span>
+                                RPG <span class="badge bg-secondary">32</span>
                             </label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="checkbox" id="genre4">
                             <label class="form-check-label" for="genre4">
-                                ジャズ <span class="badge bg-secondary">28</span>
+                                シミュレーション <span class="badge bg-secondary">28</span>
                             </label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="checkbox" id="genre5">
                             <label class="form-check-label" for="genre5">
-                                ヒップホップ <span class="badge bg-secondary">25</span>
+                                パズル <span class="badge bg-secondary">25</span>
                             </label>
                         </div>
                         <div class="form-check mb-2">
                             <input class="form-check-input" type="checkbox" id="genre6">
                             <label class="form-check-label" for="genre6">
-                                R&B <span class="badge bg-secondary">20</span>
+                                ノベルゲーム <span class="badge bg-secondary">20</span>
                             </label>
                         </div>
                     </div>
@@ -283,18 +283,18 @@
                     </div>
                 </div>
 
-                <!-- アーティストカード -->
+                <!-- 制作会社カード -->
                 <div class="row g-4">
                     <div class="col-md-4 col-sm-6">
                         <div class="card artist-card">
-                            <img src="https://placehold.co/300x250/ff6b6b/ffffff?text=THE+ROCKERS" class="artist-img" alt="THE ROCKERS">
+                            <img src="https://placehold.co/300x250/1f2937/ffffff?text=Tarsier+Studios" class="artist-img" alt="Tarsier Studios">
                             <div class="card-body">
-                                <span class="badge genre-badge mb-2" style="background-color: #fee2e2; color: #991b1b;">ロック</span>
-                                <h5 class="card-title fw-bold mb-2">THE ROCKERS</h5>
-                                <p class="card-text text-muted small mb-2">日本を代表するロックバンド</p>
+                                <span class="badge bg-dark genre-badge mb-2">ホラー</span>
+                                <h5 class="card-title fw-bold mb-2">Tarsier Studios</h5>
+                                <p class="card-text text-muted small mb-2">Little Nightmaresシリーズを手掛ける</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span class="followers-count">
-                                        <i class="bi bi-people-fill"></i> 250K
+                                        <i class="bi bi-controller"></i> 15作品
                                     </span>
                                     <button class="btn btn-sm btn-outline-primary">
                                         <i class="bi bi-heart"></i> フォロー
@@ -306,14 +306,14 @@
 
                     <div class="col-md-4 col-sm-6">
                         <div class="card artist-card">
-                            <img src="https://placehold.co/300x250/4ecdc4/ffffff?text=DJ+WAVE" class="artist-img" alt="DJ WAVE">
+                            <img src="https://placehold.co/300x250/dc2626/ffffff?text=Nintendo" class="artist-img" alt="Nintendo">
                             <div class="card-body">
-                                <span class="badge genre-badge mb-2" style="background-color: #e0e7ff; color: #3730a3;">EDM</span>
-                                <h5 class="card-title fw-bold mb-2">DJ WAVE</h5>
-                                <p class="card-text text-muted small mb-2">世界的トップDJ</p>
+                                <span class="badge bg-danger genre-badge mb-2">アクション</span>
+                                <h5 class="card-title fw-bold mb-2">任天堂</h5>
+                                <p class="card-text text-muted small mb-2">マリオ、ゼルダなど世界的IP多数</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span class="followers-count">
-                                        <i class="bi bi-people-fill"></i> 180K
+                                        <i class="bi bi-controller"></i> 200+作品
                                     </span>
                                     <button class="btn btn-sm btn-outline-primary">
                                         <i class="bi bi-heart"></i> フォロー
@@ -325,14 +325,14 @@
 
                     <div class="col-md-4 col-sm-6">
                         <div class="card artist-card">
-                            <img src="https://placehold.co/300x250/ffe66d/333333?text=JAZZ+QUINTET" class="artist-img" alt="JAZZ QUINTET">
+                            <img src="https://placehold.co/300x250/10b981/ffffff?text=FromSoftware" class="artist-img" alt="FromSoftware">
                             <div class="card-body">
-                                <span class="badge genre-badge mb-2" style="background-color: #dbeafe; color: #1e40af;">ジャズ</span>
-                                <h5 class="card-title fw-bold mb-2">JAZZ QUINTET</h5>
-                                <p class="card-text text-muted small mb-2">伝統的ジャズバンド</p>
+                                <span class="badge bg-success genre-badge mb-2">RPG</span>
+                                <h5 class="card-title fw-bold mb-2">フロムソフトウェア</h5>
+                                <p class="card-text text-muted small mb-2">ELDEN RINGなど高難易度ゲームで有名</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span class="followers-count">
-                                        <i class="bi bi-people-fill"></i> 95K
+                                        <i class="bi bi-controller"></i> 30作品
                                     </span>
                                     <button class="btn btn-sm btn-outline-primary">
                                         <i class="bi bi-heart"></i> フォロー
@@ -344,14 +344,14 @@
 
                     <div class="col-md-4 col-sm-6">
                         <div class="card artist-card">
-                            <img src="https://placehold.co/300x250/10b981/ffffff?text=ACOUSTIC+DUO" class="artist-img" alt="ACOUSTIC DUO">
+                            <img src="https://placehold.co/300x250/eab308/333333?text=Nippon+Ichi" class="artist-img" alt="Nippon Ichi">
                             <div class="card-body">
-                                <span class="badge genre-badge mb-2" style="background-color: #d1fae5; color: #065f46;">アコースティック</span>
-                                <h5 class="card-title fw-bold mb-2">ACOUSTIC DUO</h5>
-                                <p class="card-text text-muted small mb-2">心温まるデュオ</p>
+                                <span class="badge bg-warning text-dark genre-badge mb-2">シミュレーション</span>
+                                <h5 class="card-title fw-bold mb-2">日本一ソフトウェア</h5>
+                                <p class="card-text text-muted small mb-2">個性的なシミュレーションRPGを制作</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span class="followers-count">
-                                        <i class="bi bi-people-fill"></i> 120K
+                                        <i class="bi bi-controller"></i> 45作品
                                     </span>
                                     <button class="btn btn-sm btn-outline-primary">
                                         <i class="bi bi-heart"></i> フォロー
@@ -363,14 +363,14 @@
 
                     <div class="col-md-4 col-sm-6">
                         <div class="card artist-card">
-                            <img src="https://placehold.co/300x250/f59e0b/ffffff?text=MC+FLOW" class="artist-img" alt="MC FLOW">
+                            <img src="https://placehold.co/300x250/3b82f6/ffffff?text=SinPoDo" class="artist-img" alt="SinPoDo">
                             <div class="card-body">
-                                <span class="badge genre-badge mb-2" style="background-color: #fce7f3; color: #9f1239;">ヒップホップ</span>
-                                <h5 class="card-title fw-bold mb-2">MC FLOW</h5>
-                                <p class="card-text text-muted small mb-2">人気ラッパー</p>
+                                <span class="badge bg-primary genre-badge mb-2">パズル</span>
+                                <h5 class="card-title fw-bold mb-2">SinPoDo</h5>
+                                <p class="card-text text-muted small mb-2">独創的なパズルゲームを開発</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span class="followers-count">
-                                        <i class="bi bi-people-fill"></i> 200K
+                                        <i class="bi bi-controller"></i> 8作品
                                     </span>
                                     <button class="btn btn-sm btn-outline-primary">
                                         <i class="bi bi-heart"></i> フォロー
@@ -382,14 +382,14 @@
 
                     <div class="col-md-4 col-sm-6">
                         <div class="card artist-card">
-                            <img src="https://placehold.co/300x250/ec4899/ffffff?text=POP+STARS" class="artist-img" alt="POP STARS">
+                            <img src="https://placehold.co/300x250/8b5cf6/ffffff?text=Toby+Fox" class="artist-img" alt="Toby Fox">
                             <div class="card-body">
-                                <span class="badge genre-badge mb-2" style="background-color: #fef3c7; color: #92400e;">ポップ</span>
-                                <h5 class="card-title fw-bold mb-2">POP STARS</h5>
-                                <p class="card-text text-muted small mb-2">人気ポップグループ</p>
+                                <span class="badge genre-badge mb-2" style="background-color: #a855f7;">ノベルゲーム</span>
+                                <h5 class="card-title fw-bold mb-2">Toby Fox</h5>
+                                <p class="card-text text-muted small mb-2">UNDERTALE作者の個人開発者</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span class="followers-count">
-                                        <i class="bi bi-people-fill"></i> 300K
+                                        <i class="bi bi-controller"></i> 3作品
                                     </span>
                                     <button class="btn btn-sm btn-outline-primary">
                                         <i class="bi bi-heart"></i> フォロー
@@ -401,14 +401,14 @@
 
                     <div class="col-md-4 col-sm-6">
                         <div class="card artist-card">
-                            <img src="https://placehold.co/300x250/8b5cf6/ffffff?text=METAL+FORCE" class="artist-img" alt="METAL FORCE">
+                            <img src="https://placehold.co/300x250/059669/ffffff?text=Mojang" class="artist-img" alt="Mojang Studios">
                             <div class="card-body">
-                                <span class="badge genre-badge mb-2" style="background-color: #1f2937; color: white;">メタル</span>
-                                <h5 class="card-title fw-bold mb-2">METAL FORCE</h5>
-                                <p class="card-text text-muted small mb-2">激しいメタルバンド</p>
+                                <span class="badge bg-success genre-badge mb-2">RPG</span>
+                                <h5 class="card-title fw-bold mb-2">Mojang Studios</h5>
+                                <p class="card-text text-muted small mb-2">Minecraft開発スタジオ</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span class="followers-count">
-                                        <i class="bi bi-people-fill"></i> 150K
+                                        <i class="bi bi-controller"></i> 12作品
                                     </span>
                                     <button class="btn btn-sm btn-outline-primary">
                                         <i class="bi bi-heart"></i> フォロー
@@ -420,14 +420,14 @@
 
                     <div class="col-md-4 col-sm-6">
                         <div class="card artist-card">
-                            <img src="https://placehold.co/300x250/3b82f6/ffffff?text=SOUL+SINGER" class="artist-img" alt="SOUL SINGER">
+                            <img src="https://placehold.co/300x250/dc2626/ffffff?text=Square+Enix" class="artist-img" alt="Square Enix">
                             <div class="card-body">
-                                <span class="badge genre-badge mb-2" style="background-color: #dbeafe; color: #1e40af;">R&B</span>
-                                <h5 class="card-title fw-bold mb-2">SOUL SINGER</h5>
-                                <p class="card-text text-muted small mb-2">魂のソウルシンガー</p>
+                                <span class="badge bg-success genre-badge mb-2">RPG</span>
+                                <h5 class="card-title fw-bold mb-2">スクウェア・エニックス</h5>
+                                <p class="card-text text-muted small mb-2">ファイナルファンタジーなどの名作RPG</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span class="followers-count">
-                                        <i class="bi bi-people-fill"></i> 85K
+                                        <i class="bi bi-controller"></i> 150+作品
                                     </span>
                                     <button class="btn btn-sm btn-outline-primary">
                                         <i class="bi bi-heart"></i> フォロー
@@ -439,14 +439,14 @@
 
                     <div class="col-md-4 col-sm-6">
                         <div class="card artist-card">
-                            <img src="https://placehold.co/300x250/14b8a6/ffffff?text=INDIE+BAND" class="artist-img" alt="INDIE BAND">
+                            <img src="https://placehold.co/300x250/1f2937/ffffff?text=Capcom" class="artist-img" alt="Capcom">
                             <div class="card-body">
-                                <span class="badge genre-badge mb-2" style="background-color: #d1fae5; color: #065f46;">インディー</span>
-                                <h5 class="card-title fw-bold mb-2">INDIE BAND</h5>
-                                <p class="card-text text-muted small mb-2">注目のインディーバンド</p>
+                                <span class="badge bg-dark genre-badge mb-2">ホラー</span>
+                                <h5 class="card-title fw-bold mb-2">カプコン</h5>
+                                <p class="card-text text-muted small mb-2">バイオハザードシリーズなど</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span class="followers-count">
-                                        <i class="bi bi-people-fill"></i> 60K
+                                        <i class="bi bi-controller"></i> 120+作品
                                     </span>
                                     <button class="btn btn-sm btn-outline-primary">
                                         <i class="bi bi-heart"></i> フォロー
@@ -514,7 +514,7 @@
                 </div>
             </div>
             <hr class="border-light">
-            <p class="text-center text-light mb-0">&copy; 2024 LiveHub. All rights reserved.</p>
+            <p class="text-center text-light mb-0">&copy; 2024 GameHub. All rights reserved.</p>
         </div>
     </footer>
 
