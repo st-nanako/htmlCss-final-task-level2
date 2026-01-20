@@ -1,0 +1,28 @@
+ゲーム紹介サイト
+
+チケット購入ページについて
+    チケット購入ページをゲーム購入に変更
+    ページ内容
+        ゲーム選択(カード形式でチェックがつけられるようにする)
+    サイドバー
+        選択されたゲームと合計金額などを表示
+
+ジャンル別検索について
+    ジャンルは六つ
+        ホラー：黒 dark
+        アクション：赤 danger
+        RPG：緑 success
+        シミュレーション：黄色 warning
+        パズル：青 primary
+        ノベルゲーム：紫 style="background-color: #a855f7;"
+
+ページについて
+    ホーム  index.html
+    ゲーム一覧  games-list.html
+    ゲーム詳細  game-detail.html
+    制作会社一覧    game-companies.html
+    ゲーム購入  game-purchase.html
+    マイゲーム  game-mygame.html
+    ログイン    login.html
+
+現在のファイルの内容をゲーム紹介サイトに合うように変更してください。作業ブランチはdev-saout-uでお願いします。
