@@ -10,3 +10,25 @@
 .navbar {
     background: linear-gradient(135deg, var(--dark-bg) 0%, var(--primary-color) 100%);
 }
+
+game-mygame .back_img_REANIMAL{
+    background-image: url(./img/games/REANIMAL.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+game-mygame .back_img_ELDEN{
+    background-image: url(./img/games/EldenRing.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+game-mygame .back_img_Minecraft{
+    background-image: url(./img/games/Minecraft.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
