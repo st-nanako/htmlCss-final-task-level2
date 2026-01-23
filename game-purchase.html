@@ -69,7 +69,7 @@
             color: white;
         }
         
-        .ticket-card {
+        .edition-card {
             border: 3px solid #e5e7eb;
             border-radius: 15px;
             padding: 25px;
@@ -78,13 +78,13 @@
             background: white;
         }
         
-        .ticket-card:hover {
+        .edition-card:hover {
             border-color: var(--primary-color);
             transform: translateY(-5px);
             box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
         }
         
-        .ticket-card.selected {
+        .edition-card.selected {
             border-color: var(--primary-color);
             background: rgba(139, 92, 246, 0.05);
             box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
@@ -275,7 +275,7 @@
                     
                     <div class="row g-3">
                         <div class="col-md-6">
-                            <div class="ticket-card" data-price="5720" data-type="通常版">
+                            <div class="edition-card" data-price="5720" data-type="通常版">
                                 <div class="d-flex justify-content-between align-items-start mb-3">
                                     <div>
                                         <h5 class="fw-bold mb-1">通常版</h5>
@@ -293,7 +293,7 @@
                         </div>
 
                         <div class="col-md-6">
-                            <div class="ticket-card" data-price="7980" data-type="デラックスエディション">
+                            <div class="edition-card" data-price="7980" data-type="デラックスエディション">
                                 <div class="d-flex justify-content-between align-items-start mb-3">
                                     <div>
                                         <h5 class="fw-bold mb-1">デラックスエディション</h5>
@@ -312,7 +312,7 @@
                         </div>
 
                         <div class="col-md-6">
-                            <div class="ticket-card" data-price="12800" data-type="コレクターズエディション">
+                            <div class="edition-card" data-price="12800" data-type="コレクターズエディション">
                                 <div class="d-flex justify-content-between align-items-start mb-3">
                                     <div>
                                         <h5 class="fw-bold mb-1">コレクターズエディション</h5>
@@ -331,7 +331,7 @@
                         </div>
 
                         <div class="col-md-6">
-                            <div class="ticket-card" data-price="6200" data-type="ダウンロード版+DLC">
+                            <div class="edition-card" data-price="6200" data-type="ダウンロード版+DLC">
                                 <div class="d-flex justify-content-between align-items-start mb-3">
                                     <div>
                                         <h5 class="fw-bold mb-1">ダウンロード版+DLC</h5>
@@ -356,7 +356,7 @@
                     
                     <div class="seat-map">
                         <!-- タイトル -->
-                        <div class="stage">
+                        <div class="platform-section">
                             <h4 class="mb-0"><i class="bi bi-controller"></i> 対応プラットフォーム</h4>
                         </div>
 
@@ -458,7 +458,7 @@
 
                     <div class="mb-4">
                         <h6 class="text-muted mb-3">選択中のエディション</h6>
-                        <div id="selectedTicket" class="text-muted">
+                        <div id="selectedEdition" class="text-muted">
                             エディションを選択してください
                         </div>
                     </div>
@@ -475,7 +475,7 @@
                     <div class="mb-4">
                         <div class="d-flex justify-content-between mb-2">
                             <span>ゲーム価格</span>
-                            <span id="ticketPrice">¥0</span>
+                            <span id="gamePrice">¥0</span>
                         </div>
                         <div class="d-flex justify-content-between mb-2">
                             <span>システム手数料</span>
@@ -550,18 +550,18 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        let selectedTicketPrice = 0;
-        let selectedTicketType = '';
+        let selectedEditionPrice = 0;
+        let selectedEditionType = '';
         let selectedSeats = [];
 
         // チケットカード選択
-        document.querySelectorAll('.ticket-card').forEach(card => {
+        document.querySelectorAll('.edition-card').forEach(card => {
             card.addEventListener('click', function() {
-                document.querySelectorAll('.ticket-card').forEach(c => c.classList.remove('selected'));
+                document.querySelectorAll('.edition-card').forEach(c => c.classList.remove('selected'));
                 this.classList.add('selected');
                 
-                selectedTicketPrice = parseInt(this.dataset.price);
-                selectedTicketType = this.dataset.type;
+                selectedEditionPrice = parseInt(this.dataset.price);
+                selectedEditionType = this.dataset.type;
                 
                 updateSummary();
             });
@@ -586,11 +586,11 @@
 
         function updateSummary() {
             // 選択中のチケット表示
-            if (selectedTicketType) {
-                document.getElementById('selectedTicket').innerHTML = `
+            if (selectedEditionType) {
+                document.getElementById('selectedEdition').innerHTML = `
                     <div class="d-flex justify-content-between">
-                        <span>${selectedTicketType}</span>
-                        <span class="fw-bold">¥${selectedTicketPrice.toLocaleString()}</span>
+                        <span>${selectedEditionType}</span>
+                        <span class="fw-bold">¥${selectedEditionPrice.toLocaleString()}</span>
                     </div>
                 `;
             }
@@ -607,10 +607,10 @@
             }
 
             // 料金計算
-            const serviceFee = selectedTicketPrice > 0 ? Math.floor(selectedTicketPrice * 0.1) : 0;
-            const total = selectedTicketPrice + serviceFee;
+            const serviceFee = selectedEditionPrice > 0 ? Math.floor(selectedEditionPrice * 0.1) : 0;
+            const total = selectedEditionPrice + serviceFee;
 
-            document.getElementById('ticketPrice').textContent = `¥${selectedTicketPrice.toLocaleString()}`;
+            document.getElementById('gamePrice').textContent = `¥${selectedEditionPrice.toLocaleString()}`;
             document.getElementById('serviceFee').textContent = `¥${serviceFee.toLocaleString()}`;
             document.getElementById('totalPrice').textContent = `¥${total.toLocaleString()}`;
         }
