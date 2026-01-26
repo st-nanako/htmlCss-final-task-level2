@@ -99,71 +99,33 @@
             font-weight: bold;
         }
         
-        .seat-map {
-            background: #f9fafb;
-            border-radius: 15px;
-            padding: 30px;
-            margin-bottom: 30px;
-        }
-        
-        .stage {
-            background: linear-gradient(135deg, var(--dark-bg), var(--primary-color));
-            color: white;
-            padding: 20px;
+        .platform-card {
+            border: 2px solid #e5e7eb;
             border-radius: 10px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        .seat-section {
-            margin-bottom: 20px;
-        }
-        
-        .seat {
-            width: 30px;
-            height: 30px;
-            margin: 3px;
-            border-radius: 5px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
+            transition: all 0.3s ease;
             cursor: pointer;
-            transition: all 0.2s ease;
         }
         
-        .seat.available {
-            background: #10b981;
-            color: white;
+        .platform-card.available:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(139, 92, 246, 0.2);
         }
         
-        .seat.available:hover {
-            background: #059669;
-            transform: scale(1.1);
+        .platform-card.selected {
+            border-color: var(--primary-color);
+            background: rgba(139, 92, 246, 0.05);
+            box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
         }
         
-        .seat.selected {
-            background: var(--primary-color);
-            color: white;
-        }
-        
-        .seat.sold {
-            background: #e5e7eb;
-            color: #9ca3af;
+        .platform-card.unavailable {
+            opacity: 0.5;
             cursor: not-allowed;
+            background: #f9fafb;
         }
         
-        .legend-item {
-            display: inline-flex;
-            align-items: center;
-            margin-right: 20px;
-        }
-        
-        .legend-box {
-            width: 20px;
-            height: 20px;
-            border-radius: 3px;
-            margin-right: 8px;
+        .platform-card.unavailable:hover {
+            transform: none;
         }
         
         .summary-card {
@@ -354,67 +316,124 @@
                 <div class="mb-4">
                     <h3 class="fw-bold mb-4"><i class="bi bi-display text-primary"></i> プラットフォームを選択</h3>
                     
-                    <div class="seat-map">
-                        <!-- タイトル -->
-                        <div class="platform-section">
-                            <h4 class="mb-0"><i class="bi bi-controller"></i> 対応プラットフォーム</h4>
-                        </div>
-
-                        <!-- 凡例 -->
-                        <div class="mb-4 text-center">
-                            <div class="legend-item">
-                                <div class="legend-box" style="background: #10b981;"></div>
-                                <span>選択可能</span>
-                            </div>
-                            <div class="legend-item">
-                                <div class="legend-box" style="background: #8b5cf6;"></div>
-                                <span>選択中</span>
-                            </div>
-                            <div class="legend-item">
-                                <div class="legend-box" style="background: #e5e7eb;"></div>
-                                <span>選択不可</span>
-                            </div>
-                        </div>
-
-                        <!-- プラットフォーム選択エリア -->
-                        <div class="seat-section">
-                            <h6 class="fw-bold mb-3 text-center">家庭用ゲーム機</h6>
-                            <div class="text-center">
-                                <div class="mb-2">
-                                    <span class="seat available">PS5</span>
-                                    <span class="seat available">PS4</span>
-                                    <span class="seat available">Xbox Series X/S</span>
-                                    <span class="seat available">Xbox One</span>
-                                    <span class="seat available">Nintendo Switch</span>
+                    <!-- 家庭用ゲーム機 -->
+                    <h5 class="fw-bold mb-3"><i class="bi bi-controller"></i> 家庭用ゲーム機</h5>
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card platform-card available h-100" data-platform="PS5">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-playstation fs-1 mb-2" style="color: #003791;"></i>
+                                    <h6 class="card-title fw-bold">PlayStation 5</h6>
+                                    <p class="card-text small text-muted">PS5</p>
                                 </div>
                             </div>
                         </div>
-
-                        <hr class="my-4">
-
-                        <!-- PC プラットフォーム -->
-                        <div class="seat-section">
-                            <h6 class="fw-bold mb-3 text-center">PC</h6>
-                            <div class="text-center">
-                                <div class="mb-2">
-                                    <span class="seat available">Steam</span>
-                                    <span class="seat available">Epic Games</span>
-                                    <span class="seat available">Microsoft Store</span>
-                                    <span class="seat sold">Origin</span>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card platform-card available h-100" data-platform="PS4">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-playstation fs-1 mb-2" style="color: #003791;"></i>
+                                    <h6 class="card-title fw-bold">PlayStation 4</h6>
+                                    <p class="card-text small text-muted">PS4</p>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card platform-card available h-100" data-platform="Xbox Series X/S">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-xbox fs-1 mb-2" style="color: #107c10;"></i>
+                                    <h6 class="card-title fw-bold">Xbox Series X/S</h6>
+                                    <p class="card-text small text-muted">次世代Xbox</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card platform-card available h-100" data-platform="Xbox One">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-xbox fs-1 mb-2" style="color: #107c10;"></i>
+                                    <h6 class="card-title fw-bold">Xbox One</h6>
+                                    <p class="card-text small text-muted">Xbox One</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card platform-card available h-100" data-platform="Nintendo Switch">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-nintendo-switch fs-1 mb-2" style="color: #e60012;"></i>
+                                    <h6 class="card-title fw-bold">Nintendo Switch</h6>
+                                    <p class="card-text small text-muted">Switch</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <hr class="my-4">
+                    <!-- PC -->
+                    <h5 class="fw-bold mb-3"><i class="bi bi-pc-display"></i> PC</h5>
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card platform-card available h-100" data-platform="Steam">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-steam fs-1 mb-2" style="color: #1b2838;"></i>
+                                    <h6 class="card-title fw-bold">Steam</h6>
+                                    <p class="card-text small text-muted">Valve</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card platform-card available h-100" data-platform="Epic Games">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-controller fs-1 mb-2" style="color: #313131;"></i>
+                                    <h6 class="card-title fw-bold">Epic Games</h6>
+                                    <p class="card-text small text-muted">Epic Games Store</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card platform-card available h-100" data-platform="Microsoft Store">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-microsoft fs-1 mb-2" style="color: #0078d4;"></i>
+                                    <h6 class="card-title fw-bold">Microsoft Store</h6>
+                                    <p class="card-text small text-muted">Windows</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card platform-card unavailable h-100" data-platform="Origin">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-controller fs-1 mb-2 text-muted"></i>
+                                    <h6 class="card-title fw-bold text-muted">Origin</h6>
+                                    <p class="card-text small text-muted">対応予定なし</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                        <!-- クラウドゲーミング -->
-                        <div class="seat-section">
-                            <h6 class="fw-bold mb-3 text-center">クラウドゲーミング</h6>
-                            <div class="text-center">
-                                <div class="mb-2">
-                                    <span class="seat available">GeForce NOW</span>
-                                    <span class="seat available">Xbox Cloud Gaming</span>
-                                    <span class="seat sold">PlayStation Now</span>
+                    <!-- クラウドゲーミング -->
+                    <h5 class="fw-bold mb-3"><i class="bi bi-cloud"></i> クラウドゲーミング</h5>
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card platform-card available h-100" data-platform="GeForce NOW">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-cloud-arrow-down fs-1 mb-2" style="color: #76b900;"></i>
+                                    <h6 class="card-title fw-bold">GeForce NOW</h6>
+                                    <p class="card-text small text-muted">NVIDIA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card platform-card available h-100" data-platform="Xbox Cloud Gaming">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-cloud-arrow-down fs-1 mb-2" style="color: #107c10;"></i>
+                                    <h6 class="card-title fw-bold">Xbox Cloud Gaming</h6>
+                                    <p class="card-text small text-muted">Microsoft</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card platform-card unavailable h-100" data-platform="PlayStation Now">
+                                <div class="card-body text-center">
+                                    <i class="bi bi-cloud-arrow-down fs-1 mb-2 text-muted"></i>
+                                    <h6 class="card-title fw-bold text-muted">PlayStation Now</h6>
+                                    <p class="card-text small text-muted">対応予定なし</p>
                                 </div>
                             </div>
                         </div>
@@ -567,17 +586,17 @@
             });
         });
 
-        // 座席選択
-        document.querySelectorAll('.seat.available').forEach(seat => {
-            seat.addEventListener('click', function() {
-                const seatNumber = this.textContent;
+        // プラットフォーム選択
+        document.querySelectorAll('.platform-card.available').forEach(card => {
+            card.addEventListener('click', function() {
+                const platform = this.dataset.platform;
                 
                 if (this.classList.contains('selected')) {
                     this.classList.remove('selected');
-                    selectedSeats = selectedSeats.filter(s => s !== seatNumber);
+                    selectedSeats = selectedSeats.filter(s => s !== platform);
                 } else {
                     this.classList.add('selected');
-                    selectedSeats.push(seatNumber);
+                    selectedSeats.push(platform);
                 }
                 
                 updateSummary();
