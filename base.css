@@ -32,3 +32,13 @@
     background-position: center;
     background-size: cover;
 }
+
+#game-companies .card a{
+    text-decoration: none;
+    color: black;
+}
+
+#game-companies .card a:hover{
+    text-decoration: none;
+    color: black;
+}

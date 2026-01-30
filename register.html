@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新規登録 - GameHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./base.css">
+        <!-- ファビコン　リンク -->
+    <link rel="icon" href="./img/favicon.ico">
+    <style>
+        :root {
+            --primary-color: #8b5cf6;
+            --secondary-color: #ec4899;
+            --dark-bg: #18181b;
+        }
+        
+        body {
+            background: linear-gradient(135deg, var(--dark-bg) 0%, var(--primary-color) 50%, var(--secondary-color) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 40px 0;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(30px, 30px); }
+        }
+        
+        .register-container {
+            max-width: 560px;
+            width: 100%;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .register-card {
+            background: white;
+            border-radius: 25px;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+            overflow: hidden;
+        }
+        
+        .register-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 40px 40px;
+            text-align: center;
+        }
+        
+        .register-icon {
+            width: 80px;
+            height: 80px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2.5rem;
+        }
+        
+        .register-body {
+            padding: 40px;
+        }
+        
+        .form-control:focus, .form-select:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(139, 92, 246, 0.25);
+        }
+        
+        .btn-register {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            color: white;
+            padding: 14px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-register:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(139, 92, 246, 0.5);
+        }
+        
+        .social-login-btn {
+            border: 2px solid #e5e7eb;
+            padding: 14px;
+            transition: all 0.2s ease;
+            font-weight: 600;
+        }
+        
+        .social-login-btn:hover {
+            border-color: var(--primary-color);
+            background-color: rgba(139, 92, 246, 0.05);
+            transform: translateY(-2px);
+        }
+        
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        
+        .divider span {
+            padding: 0 20px;
+            color: #6b7280;
+            font-weight: 600;
+        }
+        
+        .back-link {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .back-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(-5px);
+            color: white;
+        }
+        
+        .input-group-text {
+            background: transparent;
+            border-right: none;
+        }
+        
+        .form-control {
+            border-left: none;
+        }
+        
+        .password-strength {
+            height: 5px;
+            border-radius: 3px;
+            margin-top: 8px;
+            background: #e5e7eb;
+            overflow: hidden;
+        }
+        
+        .password-strength-bar {
+            height: 100%;
+            width: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .strength-weak { background: #ef4444; width: 33%; }
+        .strength-medium { background: #f59e0b; width: 66%; }
+        .strength-strong { background: #10b981; width: 100%; }
+        
+        .password-requirements {
+            font-size: 0.85rem;
+            margin-top: 8px;
+        }
+        
+        .requirement {
+            color: #9ca3af;
+        }
+        
+        .requirement.met {
+            color: #10b981;
+        }
+    </style>
+</head>
+<body id="register">
+    <!-- 戻るリンク -->
+    <a href="./index.html" class="back-link">
+        <i class="bi bi-arrow-left-circle"></i> ホームに戻る
+    </a>
+
+    <div class="register-container">
+        <div class="register-card">
+            <!-- 登録ヘッダー -->
+            <div class="register-header">
+                <div class="register-icon">
+                    <i class="bi bi-person-plus"></i>
+                </div>
+                <h2 class="fw-bold mb-2">新規アカウント登録</h2>
+                <p class="mb-0">GameHubへようこそ！</p>
+            </div>
+
+            <!-- 登録フォーム -->
+            <div class="register-body">
+                <form id="registerForm">
+                    <!-- ユーザー名 -->
+                    <div class="mb-3">
+                        <label for="username" class="form-label fw-bold">
+                            ユーザー名
+                        </label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white">
+                                <i class="bi bi-person"></i>
+                            </span>
+                            <input type="text" class="form-control form-control-lg" id="username" placeholder="ユーザー名を入力" required>
+                        </div>
+                    </div>
+
+                    <!-- メールアドレス -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-bold">
+                            メールアドレス
+                        </label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white">
+                                <i class="bi bi-envelope"></i>
+                            </span>
+                            <input type="email" class="form-control form-control-lg" id="email" placeholder="example@email.com" required>
+                        </div>
+                    </div>
+
+                    <!-- パスワード -->
+                    <div class="mb-3">
+                        <label for="password" class="form-label fw-bold">
+                            パスワード
+                        </label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white">
+                                <i class="bi bi-lock"></i>
+                            </span>
+                            <input type="password" class="form-control form-control-lg" id="password" placeholder="••••••••" required>
+                        </div>
+                        <div class="password-strength">
+                            <div class="password-strength-bar" id="strengthBar"></div>
+                        </div>
+                        <div class="password-requirements">
+                            <div class="requirement" id="req-length">
+                                <i class="bi bi-circle"></i> 8文字以上
+                            </div>
+                            <div class="requirement" id="req-uppercase">
+                                <i class="bi bi-circle"></i> 大文字を含む
+                            </div>
+                            <div class="requirement" id="req-number">
+                                <i class="bi bi-circle"></i> 数字を含む
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- パスワード確認 -->
+                    <div class="mb-3">
+                        <label for="confirmPassword" class="form-label fw-bold">
+                            パスワード（確認）
+                        </label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white">
+                                <i class="bi bi-lock-fill"></i>
+                            </span>
+                            <input type="password" class="form-control form-control-lg" id="confirmPassword" placeholder="••••••••" required>
+                        </div>
+                        <div class="invalid-feedback" id="passwordMismatch">
+                            パスワードが一致しません
+                        </div>
+                    </div>
+
+                    <!-- 生年月日 -->
+                    <div class="mb-3">
+                        <label for="birthdate" class="form-label fw-bold">
+                            生年月日
+                        </label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white">
+                                <i class="bi bi-calendar"></i>
+                            </span>
+                            <input type="date" class="form-control form-control-lg" id="birthdate" required>
+                        </div>
+                    </div>
+
+                    <!-- 利用規約 -->
+                    <div class="mb-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="terms" required>
+                            <label class="form-check-label" for="terms">
+                                <a href="#" class="text-decoration-none" style="color: var(--primary-color);">利用規約</a>と<a href="#" class="text-decoration-none" style="color: var(--primary-color);">プライバシーポリシー</a>に同意します
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- 登録ボタン -->
+                    <button type="submit" class="btn btn-register w-100 mb-3">
+                        <i class="bi bi-person-check"></i> アカウントを作成
+                    </button>
+
+                    <!-- アラート -->
+                    <div class="alert alert-danger d-none" role="alert" id="errorAlert">
+                        <i class="bi bi-exclamation-triangle-fill"></i> <span id="errorMessage">入力内容を確認してください</span>
+                    </div>
+                    
+                    <div class="alert alert-success d-none" role="alert" id="successAlert">
+                        <i class="bi bi-check-circle-fill"></i> 登録が完了しました！
+                    </div>
+                </form>
+
+                <!-- ソーシャル登録 -->
+                <div class="divider">
+                    <span>または</span>
+                </div>
+
+                <button class="btn social-login-btn w-100 mb-3">
+                    <i class="bi bi-google"></i> Googleで登録
+                </button>
+                <button class="btn social-login-btn w-100 mb-3">
+                    <i class="bi bi-twitter"></i> Xで登録
+                </button>
+
+                <!-- ログインリンク -->
+                <div class="text-center">
+                    <p class="text-muted mb-0">
+                        すでにアカウントをお持ちの方は
+                        <a href="./login.html" class="text-decoration-none fw-bold" style="color: var(--primary-color);">ログイン</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 追加情報 -->
+        <div class="text-center mt-4 text-white">
+            <p class="mb-2">
+                <a href="#" class="text-white text-decoration-none">利用規約</a> ・ 
+                <a href="#" class="text-white text-decoration-none">プライバシーポリシー</a>
+            </p>
+            <p class="small">&copy; 2024 GameHub. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const passwordInput = document.getElementById('password');
+        const confirmPasswordInput = document.getElementById('confirmPassword');
+        const strengthBar = document.getElementById('strengthBar');
+        
+        // パスワード強度チェック
+        passwordInput.addEventListener('input', function() {
+            const password = this.value;
+            const lengthReq = document.getElementById('req-length');
+            const uppercaseReq = document.getElementById('req-uppercase');
+            const numberReq = document.getElementById('req-number');
+            
+            let strength = 0;
+            
+            // 長さチェック
+            if (password.length >= 8) {
+                lengthReq.classList.add('met');
+                lengthReq.querySelector('i').className = 'bi bi-check-circle-fill';
+                strength++;
+            } else {
+                lengthReq.classList.remove('met');
+                lengthReq.querySelector('i').className = 'bi bi-circle';
+            }
+            
+            // 大文字チェック
+            if (/[A-Z]/.test(password)) {
+                uppercaseReq.classList.add('met');
+                uppercaseReq.querySelector('i').className = 'bi bi-check-circle-fill';
+                strength++;
+            } else {
+                uppercaseReq.classList.remove('met');
+                uppercaseReq.querySelector('i').className = 'bi bi-circle';
+            }
+            
+            // 数字チェック
+            if (/[0-9]/.test(password)) {
+                numberReq.classList.add('met');
+                numberReq.querySelector('i').className = 'bi bi-check-circle-fill';
+                strength++;
+            } else {
+                numberReq.classList.remove('met');
+                numberReq.querySelector('i').className = 'bi bi-circle';
+            }
+            
+            // 強度バー更新
+            strengthBar.className = 'password-strength-bar';
+            if (strength === 1) {
+                strengthBar.classList.add('strength-weak');
+            } else if (strength === 2) {
+                strengthBar.classList.add('strength-medium');
+            } else if (strength === 3) {
+                strengthBar.classList.add('strength-strong');
+            }
+            
+            document.getElementById('errorAlert').classList.add('d-none');
+        });
+
+        // パスワード一致チェック
+        confirmPasswordInput.addEventListener('input', function() {
+            const passwordMismatch = document.getElementById('passwordMismatch');
+            if (passwordInput.value !== this.value && this.value.length > 0) {
+                this.classList.add('is-invalid');
+                passwordMismatch.style.display = 'block';
+            } else {
+                this.classList.remove('is-invalid');
+                passwordMismatch.style.display = 'none';
+            }
+        });
+
+        // 登録フォーム送信
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = passwordInput.value;
+            const confirmPassword = confirmPasswordInput.value;
+            const birthdate = document.getElementById('birthdate').value;
+            const terms = document.getElementById('terms').checked;
+            
+            const errorAlert = document.getElementById('errorAlert');
+            const errorMessage = document.getElementById('errorMessage');
+            const successAlert = document.getElementById('successAlert');
+            
+            // バリデーション
+            if (!username || !email || !password || !confirmPassword || !birthdate) {
+                errorMessage.textContent = 'すべての項目を入力してください';
+                errorAlert.classList.remove('d-none');
+                return;
+            }
+            
+            if (password !== confirmPassword) {
+                errorMessage.textContent = 'パスワードが一致しません';
+                errorAlert.classList.remove('d-none');
+                return;
+            }
+            
+            if (password.length < 8 || !/[A-Z]/.test(password) || !/[0-9]/.test(password)) {
+                errorMessage.textContent = 'パスワードが要件を満たしていません';
+                errorAlert.classList.remove('d-none');
+                return;
+            }
+            
+            if (!terms) {
+                errorMessage.textContent = '利用規約に同意してください';
+                errorAlert.classList.remove('d-none');
+                return;
+            }
+            
+            // 年齢確認（13歳以上）
+            const birthDate = new Date(birthdate);
+            const today = new Date();
+            let age = today.getFullYear() - birthDate.getFullYear();
+            const monthDiff = today.getMonth() - birthDate.getMonth();
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            
+            if (age < 13) {
+                errorMessage.textContent = '13歳以上の方のみ登録できます';
+                errorAlert.classList.remove('d-none');
+                return;
+            }
+            
+            // 成功時の処理
+            errorAlert.classList.add('d-none');
+            successAlert.classList.remove('d-none');
+            
+            setTimeout(() => {
+                alert('登録が完了しました！ログイン画面に移動します。');
+                // window.location.href = 'login.html';
+            }, 1500);
+        });
+
+        // エラーメッセージの自動非表示
+        const inputs = ['username', 'email', 'birthdate'];
+        inputs.forEach(id => {
+            document.getElementById(id).addEventListener('input', function() {
+                document.getElementById('errorAlert').classList.add('d-none');
+            });
+        });
+    </script>
+</body>
+</html>
