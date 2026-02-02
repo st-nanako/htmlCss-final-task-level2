@@ -87,32 +87,32 @@
                 <div class="row text-center">
                     <div class="col-3">
                         <div class="countdown-box">
-                            <div class="countdown-number">15</div>
+                            <div class="countdown-number" id="countdown-days">0</div>
                             <div>日</div>
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="countdown-box">
-                            <div class="countdown-number">08</div>
+                            <div class="countdown-number" id="countdown-hours">0</div>
                             <div>時間</div>
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="countdown-box">
-                            <div class="countdown-number">42</div>
+                            <div class="countdown-number" id="countdown-minutes">0</div>
                             <div>分</div>
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="countdown-box">
-                            <div class="countdown-number">33</div>
+                            <div class="countdown-number" id="countdown-seconds">0</div>
                             <div>秒</div>
                         </div>
                     </div>
                 </div>
                 <div class="text-center mt-4">
                     <h5>TOKYO GAME SHOW 2026</h5>
-                    <p class="mb-0">2026年12月3日 @ 東京ビッグサイト</p>
+                    <p class="mb-0">2026年9月17日 @ 東京ビッグサイト</p>
                 </div>
             </div>
         </div>
@@ -337,100 +337,116 @@
 
             <div class="row g-4">
                 <div class="col-6 col-md-3">
-                    <div class="game-card-medium text-center">
-                        <img src="img/games/UNDERTALE.png" class="game-img mb-3"
-                            alt="UNDERTALE">
-                        <h5 class="fw-bold mb-1">UNDERTALE</h5>
-                        <p class="text-muted small mb-2">Toby Fox</p>
-                        <div class="d-flex justify-content-center gap-2">
-                            <span class="badge bg-success">RPG</span>
-                            <span class="badge bg-primary">パズル</span>
+                    <a href="#" class="text-decoration-none">
+                        <div class="game-card-medium text-center">
+                            <img src="img/games/UNDERTALE.png" class="game-img mb-3"
+                                alt="UNDERTALE">
+                            <h5 class="fw-bold mb-1">UNDERTALE</h5>
+                            <p class="text-muted small mb-2">Toby Fox</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <span class="badge bg-success">RPG</span>
+                                <span class="badge bg-primary">パズル</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="col-6 col-md-3">
-                    <div class="game-card-medium text-center">
-                        <img src="./img/games/mario-kart-world.jpg" class="game-img mb-3"
-                            alt="mario-kart-world">
-                        <h5 class="fw-bold mb-1">マリオカートワールド</h5>
-                        <p class="text-muted small mb-2">任天堂</p>
-                        <div class="d-flex justify-content-center gap-2">
-                            <span class="badge bg-danger">アクション</span>
+                    <a href="#" class="text-decoration-none">
+                        <div class="game-card-medium text-center">
+                            <img src="./img/games/mario-kart-world.jpg" class="game-img mb-3"
+                                alt="mario-kart-world">
+                            <h5 class="fw-bold mb-1">マリオカートワールド</h5>
+                            <p class="text-muted small mb-2">任天堂</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <span class="badge bg-danger">アクション</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="col-6 col-md-3">
-                    <div class="game-card-medium text-center">
-                        <img src="./img/games/Minecraft.png" class="game-img mb-3"
-                            alt="Minecraft">
-                        <h5 class="fw-bold mb-1">Minecraft</h5>
-                        <p class="text-muted small mb-2">任天堂</p>
-                        <div class="d-flex justify-content-center gap-2">
-                            <span class="badge bg-danger">アクション</span>
+                    <a href="#" class="text-decoration-none">
+                        <div class="game-card-medium text-center">
+                            <img src="./img/games/Minecraft.png" class="game-img mb-3"
+                                alt="Minecraft">
+                            <h5 class="fw-bold mb-1">Minecraft</h5>
+                            <p class="text-muted small mb-2">任天堂</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <span class="badge bg-danger">アクション</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="col-6 col-md-3">
-                    <div class="game-card-medium text-center">
-                        <img src="./img/games/EldenRing.png" class="game-img mb-3"
-                            alt="EldenRing">
-                        <h5 class="fw-bold mb-1">ELDEN RING</h5>
-                        <p class="text-muted small mb-2">フロムソフトウェア</p>
-                        <div class="d-flex justify-content-center gap-2">
-                            <span class="badge bg-danger">アクション</span>
+                    <a href="#" class="text-decoration-none">
+                        <div class="game-card-medium text-center">
+                            <img src="./img/games/EldenRing.png" class="game-img mb-3"
+                                alt="EldenRing">
+                            <h5 class="fw-bold mb-1">ELDEN RING</h5>
+                            <p class="text-muted small mb-2">フロムソフトウェア</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <span class="badge bg-danger">アクション</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="col-6 col-md-3">
-                    <div class="game-card-medium text-center">
-                        <img src="https://placehold.co/200x200/f59e0b/ffffff?text=Game+5" class="game-img mb-3"
-                            alt="Game 5">
-                        <h5 class="fw-bold mb-1">Game 5</h5>
-                        <p class="text-muted small mb-2">制作会社</p>
-                        <div class="d-flex justify-content-center gap-2">
-                            <span class="badge bg-warning">シミュレーション</span>
+                    <a href="#" class="text-decoration-none">
+                        <div class="game-card-medium text-center">
+                            <img src="https://placehold.co/200x200/f59e0b/ffffff?text=Game+5" class="game-img mb-3"
+                                alt="Game 5">
+                            <h5 class="fw-bold mb-1">Game 5</h5>
+                            <p class="text-muted small mb-2">制作会社</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <span class="badge bg-warning">シミュレーション</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="col-6 col-md-3">
-                    <div class="game-card-medium text-center">
-                        <img src="https://placehold.co/200x200/ec4899/ffffff?text=Game+6" class="game-img mb-3"
-                            alt="Game 6">
-                        <h5 class="fw-bold mb-1">Game 6</h5>
-                        <p class="text-muted small mb-2">制作会社</p>
-                        <div class="d-flex justify-content-center gap-2">
-                            <span class="badge" style="background-color: #a855f7;">ノベルゲーム</span>
+                    <a href="#" class="text-decoration-none">
+                        <div class="game-card-medium text-center">
+                            <img src="https://placehold.co/200x200/ec4899/ffffff?text=Game+6" class="game-img mb-3"
+                                alt="Game 6">
+                            <h5 class="fw-bold mb-1">Game 6</h5>
+                            <p class="text-muted small mb-2">制作会社</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <span class="badge" style="background-color: #a855f7;">ノベルゲーム</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="col-6 col-md-3">
-                    <div class="game-card-medium text-center">
-                        <img src="https://placehold.co/200x200/8b5cf6/ffffff?text=Game+7" class="game-img mb-3"
-                            alt="Game 7">
-                        <h5 class="fw-bold mb-1">Game 7</h5>
-                        <p class="text-muted small mb-2">制作会社</p>
-                        <div class="d-flex justify-content-center gap-2">
-                            <span class="badge bg-dark">ホラー</span>
+                    <a href="#" class="text-decoration-none">
+                        <div class="game-card-medium text-center">
+                            <img src="https://placehold.co/200x200/8b5cf6/ffffff?text=Game+7" class="game-img mb-3"
+                                alt="Game 7">
+                            <h5 class="fw-bold mb-1">Game 7</h5>
+                            <p class="text-muted small mb-2">制作会社</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <span class="badge bg-dark">ホラー</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="col-6 col-md-3">
-                    <div class="game-card-medium text-center">
-                        <img src="https://placehold.co/200x200/3b82f6/ffffff?text=Game+8" class="game-img mb-3"
-                            alt="Game 8">
-                        <h5 class="fw-bold mb-1">Game 8</h5>
-                        <p class="text-muted small mb-2">制作会社</p>
-                        <div class="d-flex justify-content-center gap-2">
-                            <span class="badge bg-primary">パズル</span>
+                    <a href="#" class="text-decoration-none">
+                        <div class="game-card-medium text-center">
+                            <img src="https://placehold.co/200x200/3b82f6/ffffff?text=Game+8" class="game-img mb-3"
+                                alt="Game 8">
+                            <h5 class="fw-bold mb-1">Game 8</h5>
+                            <p class="text-muted small mb-2">制作会社</p>
+                            <div class="d-flex justify-content-center gap-2">
+                                <span class="badge bg-primary">パズル</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -529,5 +545,47 @@
     </footer>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- カウントダウンスクリプト -->
+    <script>
+        // カウントダウンのターゲット日時を設定
+        const countdownDate = new Date('2026-09-17T10:00:00').getTime();
+        
+        // カウントダウンを更新する関数
+        function updateCountdown() {
+            // 現在時刻を取得
+            const now = new Date().getTime();
+            
+            // 残り時間を計算
+            const distance = countdownDate - now;
+            
+            // 日、時間、分、秒を計算
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // HTML要素を更新
+            document.getElementById('countdown-days').textContent = days.toString().padStart(2, '0');
+            document.getElementById('countdown-hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('countdown-minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('countdown-seconds').textContent = seconds.toString().padStart(2, '0');
+            
+            // カウントダウンが終了した場合
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById('countdown-days').textContent = '00';
+                document.getElementById('countdown-hours').textContent = '00';
+                document.getElementById('countdown-minutes').textContent = '00';
+                document.getElementById('countdown-seconds').textContent = '00';
+            }
+        }
+        
+        // 初回実行
+        updateCountdown();
+        
+        // 1秒ごとに更新
+        const countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
 </body>
 </html>
