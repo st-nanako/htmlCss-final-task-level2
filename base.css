@@ -42,3 +42,10 @@
     text-decoration: none;
     color: black;
 }
+
+#game-mygame .back_img_SAMPLE{
+    background-image: url("https://placehold.co/200x200/5F9EA0/000000?text=GameImg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
