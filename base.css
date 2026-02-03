@@ -33,12 +33,13 @@
     background-size: cover;
 }
 
-#game-companies .card a{
+
+.none{
     text-decoration: none;
     color: black;
 }
 
-#game-companies .card a:hover{
+.none:hover{
     text-decoration: none;
     color: black;
 }
