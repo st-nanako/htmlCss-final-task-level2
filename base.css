@@ -829,10 +829,9 @@
 }
 
 /* ========== login.html (body#login) ========== */
-#login body {
+body#login {
     background: linear-gradient(135deg, var(--dark-bg) 0%, var(--primary-color) 50%, var(--secondary-color) 100%);
     min-height: 100vh;
-    display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -1009,10 +1008,9 @@
 }
 
 /* ========== register.html (body#register) ========== */
-#register body {
+body#register {
     background: linear-gradient(135deg, var(--dark-bg) 0%, var(--primary-color) 50%, var(--secondary-color) 100%);
     min-height: 100vh;
-    display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
